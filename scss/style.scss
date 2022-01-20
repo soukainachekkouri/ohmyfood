@@ -1,0 +1,19 @@
+/*Mobile*/ 
+
+@media screen and (max-width:767px)
+{
+    .home{
+        background-color: white;
+        margin: 20%;
+    }
+
+    .header img
+    {
+        justify-content: center;
+    }
+
+    form
+    {
+        margin-top: 25px;
+    }
+}

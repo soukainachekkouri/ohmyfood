@@ -1,0 +1,15 @@
+/*Mobile*/
+@media screen and (max-width: 767px) {
+  .home {
+    background-color: black;
+  }
+  .header img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  form {
+    margin-top: 25px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
