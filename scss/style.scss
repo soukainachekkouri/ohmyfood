@@ -1,19 +1,41 @@
+/*ordi*/ 
+
+
+
 /*Mobile*/ 
 
 @media screen and (max-width:767px)
 {
-    .home{
-        background-color: white;
-        margin: 20%;
+    body 
+    {
+        margin: 0;
+    }
+    
+    header
+    {
+        align-content: center;
+        height: 70px;
+        border-bottom: solid 4px #EAEAEA;
     }
 
-    .header img
-    {
-        justify-content: center;
-    }
+        form 
+        {
+            background-color: #EAEAEA;
+            margin-top: 10px;
+            display: flex;
+            margin-left: 30px;
+            align-items: center;
+        }
 
-    form
+            input 
+            {
+                border: none;
+                background-color: transparent;
+            }
+
+    main 
     {
-        margin-top: 25px;
+        background-color: #EAEAEA;
+        height: 50px;
     }
 }
