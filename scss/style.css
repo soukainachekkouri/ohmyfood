@@ -5,10 +5,11 @@
     margin: 0;
   }
   header {
-    -ms-flex-line-pack: center;
-        align-content: center;
-    height: 70px;
-    border-bottom: solid 4px #EAEAEA;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 4rem;
+    padding: 1.25rem 1rem 0;
   }
   form {
     background-color: #EAEAEA;
@@ -28,6 +29,48 @@
   main {
     background-color: #EAEAEA;
     height: 50px;
+  }
+  section {
+    background-color: #f4f4f5;
+  }
+  .intro-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .intro-title {
+    font-size: 22px;
+  }
+  .fonctionnement .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #f4f4f5;
+    border: solid 1px black;
+    border-radius: 1.5rem;
+  }
+  .fonctionnement .card-number-text {
+    background-color: #9356dc;
+  }
+  .fonctionnement .card-info {
+    padding-left: 20px;
+    color: grey;
+  }
+  .fonctionnement .card-title {
+    padding-left: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
