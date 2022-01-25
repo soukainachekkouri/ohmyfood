@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/*ordi*/
+.restos {
+  background-color: #f4f4f5;
+}
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+  /*Général*/
+  body {
+    margin: 0;
+  }
+  /*Header*/
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 4rem;
+    padding: 1.25rem 1rem 0;
+  }
+  form {
+    background-color: #EAEAEA;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  input {
+    border: none;
+    background-color: transparent;
+  }
+  main {
+    background-color: #EAEAEA;
+    height: 50px;
+  }
+  /*Intro*/
+  .intro {
+    background-color: #f4f4f5;
+  }
+  .intro-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    justify-items: center;
+  }
+  .intro-title {
+    font-size: 22px;
+  }
+  /*Comment ça marche*/
+  .fonctionnement .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #f4f4f5;
+    border: solid 1px black;
+    border-radius: 1.5rem;
+    padding: 1.625rem var(--gap, 1.25rem) 1.625rem 0;
+    margin: 0 20px 20px 20px;
+    gap: 1.25rem;
+  }
+  .section-title {
+    margin-left: 1rem;
+  }
+  .fonctionnement .card-number {
+    background-color: #9356dc;
+    border-radius: 1.5rem;
+    height: var(--label-height, 1.5rem);
+    width: var(--label-height, 1.5rem);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: -7px;
+    gap: 1.5rem;
+  }
+  .fonctionnement .card-number-text {
+    color: #ffffff;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .fonctionnement .card-info {
+    padding-left: 20px;
+    color: grey;
+  }
+  .fonctionnement .card-title {
+    padding-left: 20px;
+  }
+  ol {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+  /*Les restos*/
+  .restos .section-grid {
+    padding: 20px;
+  }
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 0.5rem;
+    -webkit-text-decoration: solid;
+            text-decoration: solid;
+  }
+  .cards-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .cards .cards-img img {
+    width: 100%;
+    height: 190px;
+    position: relative;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cards-header-content {
+    margin-left: 5px;
+    color: black;
+  }
+  .card-header-title {
+    margin-top: 0;
+  }
+  .icon_like {
+    margin-left: 80px;
+    justify-items: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
