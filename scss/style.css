@@ -1,15 +1,22 @@
 @charset "UTF-8";
-/*ordi*/
-.restos {
-  background-color: #f4f4f5;
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+ul {
+  list-style: none;
+}
+
+/*TYPOGRAPHY*/
+.button {
+  height: 3rem;
+  border-radius: 2rem;
+  background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+  width: auto;
+  color: #ffffff;
+  border-color: transparent;
 }
 
 /*Mobile*/
 @media screen and (max-width: 767px) {
-  /*Général*/
-  body {
-    margin: 0;
-  }
   /*Header*/
   header {
     display: -webkit-box;
@@ -22,6 +29,41 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .footer {
+    background-color: #27272a;
+    color: #ffffff;
+    padding: 1.125rem 1.5625rem 2.25rem;
+  }
+  .footer img {
+    color: #ffffff;
+    size: 20px;
+  }
+  .footer-list {
+    color: #ffffff;
+  }
+  .footer-link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+/*Couleurs principales*/
+/* Couleurs de fonds et d'icônes */
+/*ordi*/
+.restos {
+  background-color: #f4f4f5;
+}
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+  /*Général*/
+  body {
+    margin: 0;
   }
   form {
     background-color: #EAEAEA;
@@ -164,23 +206,6 @@
         -ms-flex-align: center;
             align-items: center;
     margin-right: 20px;
-  }
-  /*Footer*/
-  .footer {
-    background-color: #27272a;
-    color: #ffffff;
-    padding: 1.125rem 1.5625rem 2.25rem;
-  }
-  .footer img {
-    color: #ffffff;
-    size: 20px;
-  }
-  .footer-list {
-    color: #ffffff;
-  }
-  .footer-link {
-    text-decoration: none;
-    color: #ffffff;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,9 +1,12 @@
-/*ordi*/ 
+@import "./base/base";
+@import "./base/typo";
+@import "./components/buttons";
+@import "./components/accueil.scss";
+@import "./layouts/header";
+@import "./layouts/footer";
+@import "./utils/variables";
 
-.restos
-{
-    background-color: #f4f4f5;
-}
+
 
 
 /*Mobile*/ 
@@ -16,16 +19,6 @@
     body 
     {
         margin: 0;
-    }
-
-    /*Header*/
-    
-    header
-    {
-        display: flex;
-        justify-content: center;
-        height: 4rem;
-        align-items: center;
     }
 
         form 
@@ -50,159 +43,4 @@
         height: 50px;
     }
 
-    /*Intro*/
-
-    .intro
-    {
-        background-color: #f4f4f5;
-    }
-
-    .intro-wrapper
-    {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        padding: 2rem;
-        justify-items: center;
-    }
-
-    .intro-title
-    {
-        font-size: 22px;
-    }
-
-    /*Comment ça marche*/
-
-    .fonctionnement .card
-    {
-        display: flex;
-        flex-direction: row;
-        background-color: #f4f4f5;
-        border-radius: 1.5rem;
-        padding: 1.625rem var(--gap, 1.25rem) 1.625rem 0;
-        margin: 0 20px 20px 20px; 
-        gap: 1.25rem;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        transition: background-color .3s ease-in-out;
-    }
-
-    .fonctionnement .card:hover
-    {
-        background-color: #f5edff;
-    }
-
-    .section-title
-    {
-        margin-left: 1rem;
-    }
-
-    .fonctionnement .card-number
-    {
-        background-color: #9356dc;
-        border-radius: 1.5rem;
-        height: var(--label-height, 1.5rem);
-        width: var(--label-height, 1.5rem);
-        margin-left: -7px;
-        gap: 1.5rem;
-    }
-
-    .fonctionnement .card-number-text
-    {
-        color: #ffffff;
-        align-content: center;
-    }
-
-    .fonctionnement .card-info
-    {
-        padding-left: 20px;
-        color: grey;
-    }
-
-    .fonctionnement .card-title
-    {
-        padding-left: 20px;
-    }
-
-    ol
-    {
-        padding-inline-start: 0;
-    }
-
-    /*Les restos*/
-
-    .restos .section-grid
-    {
-      padding: 20px;  
-    }
-
-    .cards
-    {
-        display: flex;
-        flex-direction: column;
-        background-color: #ffffff;
-        margin-bottom: 20px;
-        border-radius: 0.5rem;
-        text-decoration: solid;
-    }
-
-    .cards-header 
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .cards .cards-img img
-    {
-        width: 100%;
-        height: 190px;
-        position: relative;
-        border-top-left-radius: 0.5rem;
-        border-top-right-radius: 0.5rem;
-        object-fit: cover;
-    }
-
-    .cards-header-content
-    {
-        margin-left: 5px;
-        color: black;
-    }
-
-    .card-header-title
-    {
-        margin-top: 0;
-    }
-
-    .icon_like
-    {
-        justify-items: center;
-        align-items: center;
-        margin-right: 20px;
-    }
-
-    /*Footer*/
-
-    .footer 
-    {
-        background-color: #27272a;
-        color: #ffffff;
-        padding: 1.125rem 1.5625rem 2.25rem;
-    }
-
-    .footer img
-    {
-        color: #ffffff;
-        size: 20px;
-    }
-
-    .footer-list
-    {
-        color: #ffffff;
-    }
-
-    .footer-link
-    {
-        text-decoration: none;
-        color: #ffffff;
-    }
 }
