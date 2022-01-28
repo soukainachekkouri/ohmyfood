@@ -9,15 +9,17 @@
             padding: 1.125rem 1.5625rem 2.25rem;
         }
     
-        .footer img
+        .logo-footer
         {
             color: #ffffff;
-            size: 20px;
+            size: 60px;
+            font-family: $font-logo; 
         }
     
         .footer-list
         {
             color: #ffffff;
+            margin-left: -40px;
         }
     
         .footer-link

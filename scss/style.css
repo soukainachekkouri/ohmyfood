@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*Couleurs principales*/
+/* Couleurs de fonds et d'icônes */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 ul {
@@ -15,56 +17,8 @@ ul {
   border-color: transparent;
 }
 
-/*Mobile*/
 @media screen and (max-width: 767px) {
-  /*Header*/
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 4rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-/* Mobile */
-@media screen and (max-width: 767px) {
-  .footer {
-    background-color: #27272a;
-    color: #ffffff;
-    padding: 1.125rem 1.5625rem 2.25rem;
-  }
-  .footer img {
-    color: #ffffff;
-    size: 20px;
-  }
-  .footer-list {
-    color: #ffffff;
-  }
-  .footer-link {
-    text-decoration: none;
-    color: #ffffff;
-  }
-}
-
-/*Couleurs principales*/
-/* Couleurs de fonds et d'icônes */
-/*ordi*/
-.restos {
-  background-color: #f4f4f5;
-}
-
-/*Mobile*/
-@media screen and (max-width: 767px) {
-  /*Général*/
-  body {
-    margin: 0;
-  }
+  /*Localisation*/
   form {
     background-color: #EAEAEA;
     display: -webkit-box;
@@ -73,7 +27,6 @@ ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: 30px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -87,7 +40,10 @@ ul {
     background-color: #EAEAEA;
     height: 50px;
   }
-  /*Intro*/
+  .icon_geo {
+    margin-right: 20px;
+  }
+  /* Part 1 */
   .intro {
     background-color: #f4f4f5;
   }
@@ -106,7 +62,7 @@ ul {
   .intro-title {
     font-size: 22px;
   }
-  /*Comment ça marche*/
+  /*Comment ça marche */
   .fonctionnement .card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -126,7 +82,7 @@ ul {
     transition: background-color .3s ease-in-out;
   }
   .fonctionnement .card:hover {
-    background-color: #f5edff;
+    background-color: #9356dc;
   }
   .section-title {
     margin-left: 1rem;
@@ -143,19 +99,30 @@ ul {
     color: #ffffff;
     -ms-flex-line-pack: center;
         align-content: center;
+    margin-left: 7px;
+    line-height: 1.5rem;
   }
   .fonctionnement .card-info {
     padding-left: 20px;
     color: grey;
   }
+  .fonctionnement .card-info:hover {
+    color: #ffffff;
+  }
   .fonctionnement .card-title {
     padding-left: 20px;
+  }
+  .fonctionnement .card-title:hover {
+    color: #ffffff;
   }
   ol {
     -webkit-padding-start: 0;
             padding-inline-start: 0;
   }
-  /*Les restos*/
+  /* Les restos*/
+  .restos {
+    background-color: #f4f4f5;
+  }
   .restos .section-grid {
     padding: 20px;
   }
@@ -194,11 +161,14 @@ ul {
        object-fit: cover;
   }
   .cards-header-content {
-    margin-left: 5px;
+    margin-left: 20px;
     color: black;
   }
   .card-header-title {
     margin-top: 0;
+  }
+  .cards-header-para {
+    margin-top: -12px;
   }
   .icon_like {
     justify-items: center;
@@ -206,6 +176,77 @@ ul {
         -ms-flex-align: center;
             align-items: center;
     margin-right: 20px;
+    font-size: 30px;
+    color: black;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+  /*Header*/
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 4rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .footer {
+    background-color: #27272a;
+    color: #ffffff;
+    padding: 1.125rem 1.5625rem 2.25rem;
+  }
+  .logo-footer {
+    color: #ffffff;
+    size: 60px;
+    font-family: "Shrikhand", bold, cursive;
+  }
+  .footer-list {
+    color: #ffffff;
+    margin-left: -40px;
+  }
+  .footer-link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 767px) {
+  /*Général*/
+  body {
+    margin: 0;
+  }
+  form {
+    background-color: #EAEAEA;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+  }
+  input {
+    border: none;
+    background-color: transparent;
+  }
+  main {
+    background-color: #EAEAEA;
+    height: 50px;
   }
 }
 /*# sourceMappingURL=style.css.map */

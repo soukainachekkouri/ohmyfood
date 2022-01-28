@@ -1,33 +1,22 @@
-/*ordi*/ 
-
-.restos
-{
-    background-color: #f4f4f5;
-}
-
-
-
 @media screen and (max-width:767px)
 {
-    
-    /*Général*/
 
+/*Localisation*/
 
-        form 
-        {
-            background-color: #EAEAEA;
-            display: flex;
-            justify-content: center;
-            margin-left: 30px;
-            align-items: center;
-            padding: 1rem;
-        }
+    form 
+    {
+        background-color: #EAEAEA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
 
-            input 
-            {
-                border: none;
-                background-color: transparent;
-            }
+    input 
+    {
+        border: none;
+        background-color: transparent;
+    }
 
     main 
     {
@@ -35,7 +24,12 @@
         height: 50px;
     }
 
-    /*Intro*/
+    .icon_geo
+    {
+        margin-right: 20px;
+    }
+
+/* Part 1 */
 
     .intro
     {
@@ -56,13 +50,13 @@
         font-size: 22px;
     }
 
-    /*Comment ça marche*/
+/*Comment ça marche */
 
     .fonctionnement .card
     {
         display: flex;
         flex-direction: row;
-        background-color: $color-bg-light;
+        background-color: #f4f4f5;
         border-radius: 1.5rem;
         padding: 1.625rem var(--gap, 1.25rem) 1.625rem 0;
         margin: 0 20px 20px 20px; 
@@ -73,7 +67,7 @@
 
     .fonctionnement .card:hover
     {
-        background-color: $color-bg-medium;
+        background-color: #9356dc;
     }
 
     .section-title
@@ -83,7 +77,7 @@
 
     .fonctionnement .card-number
     {
-        background-color: $color-primary;
+        background-color: #9356dc;
         border-radius: 1.5rem;
         height: var(--label-height, 1.5rem);
         width: var(--label-height, 1.5rem);
@@ -95,7 +89,10 @@
     {
         color: #ffffff;
         align-content: center;
+        margin-left: 7px;
+        line-height: 1.5rem;
     }
+
 
     .fonctionnement .card-info
     {
@@ -103,9 +100,19 @@
         color: grey;
     }
 
+    .fonctionnement .card-info:hover
+    {
+        color: #ffffff;
+    }
+
     .fonctionnement .card-title
     {
         padding-left: 20px;
+    }
+
+    .fonctionnement .card-title:hover
+    {
+        color: #ffffff;
     }
 
     ol
@@ -113,7 +120,12 @@
         padding-inline-start: 0;
     }
 
-    /*Les restos*/
+    /* Les restos*/
+
+    .restos
+    {
+        background-color: #f4f4f5;
+    }
 
     .restos .section-grid
     {
@@ -149,7 +161,7 @@
 
     .cards-header-content
     {
-        margin-left: 5px;
+        margin-left: 20px;
         color: black;
     }
 
@@ -158,12 +170,17 @@
         margin-top: 0;
     }
 
+    .cards-header-para
+    {
+        margin-top: -12px;
+    }
+
     .icon_like
     {
         justify-items: center;
         align-items: center;
         margin-right: 20px;
+        font-size: 30px;
+        color: black;
     }
-
-
 }
