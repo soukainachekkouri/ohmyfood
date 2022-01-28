@@ -7,10 +7,10 @@ Vous faites partie des 4 heureux élus qui ont la chance de travailler sur ce be
 
 L’équipe se compose de :
 
-Paul, le CTO du futur site ;
-Fanny, l’UX designer recrutée pour mettre le site aux couleurs de Paris ;
-Anissa, commerciale chargée de démarcher les restaurants ;
-et vous, chargé du développement du site.
+<ul> Paul, le CTO du futur site ;</ul>
+<ul> Fanny, l’UX designer recrutée pour mettre le site aux couleurs de Paris ;</ul>
+<ul> Anissa, commerciale chargée de démarcher les restaurants ;</ul>
+<ul> vous, chargé du développement du site </ul>
 Anissa est en plein démarchage pour ce projet, auprès des restaurateurs. Elle vous interpelle à la machine à café :
 
 Tu connais pas la nouvelle ? Tu te rappelles le responsable commercial de ton resto préféré ? J’ai réussi à le convaincre, avec 3 autres, de déposer leurs cartes en ligne ! Je t’envoie le dossier avec les 4 menus dans l’après-midi. À toi de jouer, maintenant !
