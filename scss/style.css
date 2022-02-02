@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Couleurs principales*/
 /* Couleurs de fonds et d'icônes */
+/* Couleurs de bouton */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 ul {
@@ -178,6 +179,9 @@ ul {
     margin-right: 20px;
     font-size: 30px;
     color: black;
+  }
+  .icon_like:hover {
+    background-color: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
   }
 }
 
