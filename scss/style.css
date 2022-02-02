@@ -180,8 +180,9 @@ ul {
     font-size: 30px;
     color: black;
   }
-  .icon_like:hover {
+  .icon_like:active {
     background-color: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+    border: transparent;
   }
 }
 
