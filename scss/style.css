@@ -186,15 +186,26 @@ ul {
   }
 }
 
+.header .logo img {
+  width: 60%;
+}
+
 @media screen and (max-width: 767px) {
-  .header .logo {
+  .logo a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 4rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .header .logo img {
+  .logo img {
     width: 60%;
-    height: 3rem;
+    height: 2.5rem;
   }
   .menu-title {
     display: -webkit-box;
@@ -203,8 +214,36 @@ ul {
     font: "Shrikhand", bold, cursive;
   }
   .cover img {
-    width: 90%;
-    height: 5rem;
+    width: 100%;
+    height: 20rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .le-menu {
+    background-color: #f4f4f5;
+    margin-top: -60px;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px 0 0 10px;
+  }
+  .le-menu .card-dish {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+  }
+  .le-menu .card-dish-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .le-menu .card-dish-meal .card-dish-accompagnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

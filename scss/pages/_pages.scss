@@ -1,11 +1,25 @@
+.header .logo
+{
+    & img{
+        width: 60%;
+    }
+}
+
+
 @media screen and (max-width:767px)
 {
-    .header .logo
+    .logo
     {
-        display: flex;
+        & a{
+            display: flex;
+            justify-content: center;
+            height: 4rem;
+            align-items: center;
+        }
+
         & img{
             width: 60%;
-            height: 3rem;
+            height: 2.5rem;
         }
     }
 
@@ -18,8 +32,32 @@
     .cover
     {
         & img{
-            width: 90%;
-            height: 5rem;
+            width: 100%;
+            height: 20rem;
+            object-fit: cover;
+        }
+    }
+
+    .le-menu
+    {
+        background-color: $color-bg-light;
+        margin-top: -60px;
+        position: relative;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 10px 0 0 10px;
+        & .card-dish{
+            background-color: #ffffff;
+            margin-bottom: 10px;
+        }
+        & .card-dish-detail{
+            display: flex;
+            flex-direction: column;
+        }
+        & .card-dish-meal{
+            & .card-dish-accompagnement{
+                display: flex;
+            }
         }
     }
 }
