@@ -195,17 +195,19 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     height: 4rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: -4.5rem;
+  }
+  .logo .icon-return {
+    color: #27272a;
   }
   .logo img {
     width: 60%;
     height: 2.5rem;
+    margin-left: 3rem;
   }
   .menu-title {
     display: -webkit-box;
@@ -228,22 +230,35 @@ ul {
     padding: 10px 0 0 10px;
   }
   .le-menu .card-dish {
-    background-color: #ffffff;
-    margin-bottom: 10px;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 1px 5px grey;
+            box-shadow: 0 1px 5px grey;
   }
   .le-menu .card-dish-detail {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: block;
   }
-  .le-menu .card-dish-meal .card-dish-accompagnement {
+  .le-menu .card-dish-meal {
+    display: block;
+  }
+  .le-menu .card-price {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin: 0 3px -1px auto;
+  }
+  .le-menu .card-dish-accompagnement {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 

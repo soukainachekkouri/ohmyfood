@@ -12,14 +12,19 @@
     {
         & a{
             display: flex;
-            justify-content: center;
             height: 4rem;
             align-items: center;
+            margin-left: -4.5rem;
+        }
+
+        & .icon-return{
+            color: $color-bg-darken;
         }
 
         & img{
             width: 60%;
             height: 2.5rem;
+            margin-left: 3rem;
         }
     }
 
@@ -47,17 +52,28 @@
         border-top-right-radius: 20px;
         padding: 10px 0 0 10px;
         & .card-dish{
-            background-color: #ffffff;
-            margin-bottom: 10px;
+            background-color: white;
+            display: flex;
+            margin: 10px 10px 10px 10px;
+            padding: 15px 15px 15px 15px;
+            border-radius: 15px;
+            box-shadow: 0 1px 5px grey;
         }
         & .card-dish-detail{
-            display: flex;
-            flex-direction: column;
+            display: block;
         }
         & .card-dish-meal{
-            & .card-dish-accompagnement{
-                display: flex;
-            }
+            display: block;
+        }
+        & .card-price{
+            display: flex;
+            align-items: flex-end;
+            margin: 0 3px -1px auto;
+        }
+        & .card-dish-accompagnement{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
     }
 }
