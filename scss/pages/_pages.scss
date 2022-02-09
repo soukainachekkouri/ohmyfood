@@ -58,6 +58,10 @@
             padding: 15px 15px 15px 15px;
             border-radius: 15px;
             box-shadow: 0 1px 5px grey;
+            cursor: pointer;
+            & .card-dish:hover .slidein{
+                width: 300px;
+            }
         }
         & .card-dish-detail{
             display: block;
@@ -74,6 +78,16 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+        }
+
+        & .card-choose{
+            background-color: #99E2D0;
+            display: flex;
+            justify-content: center;
+            min-width: 0%;
+            transition: 400ms linear;
+            transform-origin: right;
+            position: relative;
         }
     }
 }
