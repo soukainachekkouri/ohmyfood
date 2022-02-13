@@ -5,9 +5,8 @@
     }
 }
 
+/*keyframe pour l'affichage des cards !plus simple!*/
 
-@media screen and (max-width:767px)
-{
     .logo
     {
         & a{
@@ -50,7 +49,7 @@
         position: relative;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        padding: 10px 0 0 10px;
+        padding: 10px 0 40px 10px;
         & .card-dish{
             background-color: white;
             display: flex;
@@ -59,7 +58,7 @@
             border-radius: 15px;
             box-shadow: 0 1px 5px grey;
             cursor: pointer;
-            & .card-dish:hover .slidein{
+            & .card-dish:hover .card-choose{
                 width: 300px;
             }
         }
@@ -69,25 +68,32 @@
         & .card-dish-meal{
             display: block;
         }
-        & .card-price{
-            display: flex;
-            align-items: flex-end;
-            margin: 0 3px -1px auto;
-        }
         & .card-dish-accompagnement{
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
         }
-
-        & .card-choose{
-            background-color: #99E2D0;
+        
+        .card-right-side{
             display: flex;
-            justify-content: center;
-            min-width: 0%;
-            transition: 400ms linear;
-            transform-origin: right;
-            position: relative;
-        }
+            & .card-price{
+                display: flex;
+                align-items: flex-end;
+                margin: 0 3px -1px auto;
+            }
+            & .card-choose {
+                background-color: $color-tertiary;
+                display: flex;
+                font-size: 2rem;
+                justify-content: center;
+                align-items: center;
+                width: 0;
+                height: 100%;
+                position: relative;
+                border-radius: 6px 6px 6px 6px;
+                /*translate le + adapté*/
+                
+            }
+         }
+
     }
-}

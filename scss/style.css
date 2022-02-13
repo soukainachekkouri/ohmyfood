@@ -4,6 +4,8 @@
 /* Couleurs de bouton */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 ul {
   list-style: none;
 }
@@ -18,278 +20,331 @@ ul {
   border-color: transparent;
 }
 
-@media screen and (max-width: 767px) {
-  /*Localisation*/
-  form {
-    background-color: #EAEAEA;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 1rem;
-  }
-  input {
-    border: none;
-    background-color: transparent;
-  }
-  main {
-    background-color: #EAEAEA;
-    height: 50px;
-  }
-  .icon_geo {
-    margin-right: 20px;
-  }
-  /* Part 1 */
-  .intro {
-    background-color: #f4f4f5;
-  }
-  .intro-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-    padding: 2rem;
-    justify-items: center;
-  }
-  .intro-title {
-    font-size: 22px;
-  }
-  /*Comment ça marche */
-  .fonctionnement .card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    background-color: #f4f4f5;
-    border-radius: 1.5rem;
-    padding: 1.625rem var(--gap, 1.25rem) 1.625rem 0;
-    margin: 0 20px 20px 20px;
-    gap: 1.25rem;
-    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    -webkit-transition: background-color .3s ease-in-out;
-    transition: background-color .3s ease-in-out;
-  }
-  .fonctionnement .card:hover {
-    background-color: #9356dc;
-  }
-  .section-title {
-    margin-left: 1rem;
-  }
-  .fonctionnement .card-number {
-    background-color: #9356dc;
-    border-radius: 1.5rem;
-    height: var(--label-height, 1.5rem);
-    width: var(--label-height, 1.5rem);
-    margin-left: -7px;
-    gap: 1.5rem;
-  }
-  .fonctionnement .card-number-text {
-    color: #ffffff;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    margin-left: 7px;
-    line-height: 1.5rem;
-  }
-  .fonctionnement .card-info {
-    padding-left: 20px;
-    color: grey;
-  }
-  .fonctionnement .card-info:hover {
-    color: #ffffff;
-  }
-  .fonctionnement .card-title {
-    padding-left: 20px;
-  }
-  .fonctionnement .card-title:hover {
-    color: #ffffff;
-  }
-  ol {
-    -webkit-padding-start: 0;
-            padding-inline-start: 0;
-  }
-  /* Les restos*/
-  .restos {
-    background-color: #f4f4f5;
-  }
-  .restos .section-grid {
-    padding: 20px;
-  }
-  .cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    border-radius: 0.5rem;
-    -webkit-text-decoration: solid;
-            text-decoration: solid;
-  }
-  .cards a {
-    display: block;
-  }
-  .cards .new-tag {
-    background-color: #99E2D0;
-    color: #008766;
-    padding: 0 0.8em;
-    position: absolute;
-  }
-  .cards .cards-img img {
-    width: 100%;
-    height: 190px;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .cards .cards-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .cards .cards-header .cards-header-content {
-    margin-left: 20px;
-    color: black;
-    -webkit-text-decoration: solid;
-            text-decoration: solid;
-  }
-  .card-header-title {
-    margin-top: 0;
-  }
-  .cards-header-para {
-    margin-top: -12px;
-  }
-  .icon_like {
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
-    margin-right: 20px;
-    font-size: 30px;
-    color: black;
-  }
-  .icon_like:active {
-    background-color: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
-    border: transparent;
-  }
+/*Localisation*/
+form {
+  background-color: #EAEAEA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+}
+
+main {
+  background-color: #EAEAEA;
+  height: 50px;
+}
+
+.icon_geo {
+  margin-right: 20px;
+}
+
+/* Part 1 */
+.intro {
+  background-color: #f4f4f5;
+}
+
+.intro-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.intro-title {
+  font-size: 22px;
+}
+
+/*Comment ça marche */
+.fonctionnement .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #f4f4f5;
+  border-radius: 1.5rem;
+  padding: 1.625rem var(--gap, 1.25rem) 1.625rem 0;
+  margin: 0 20px 20px 20px;
+  gap: 1.25rem;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+.fonctionnement .card:hover {
+  background-color: #9356dc;
+}
+
+.section-title {
+  margin-left: 1rem;
+}
+
+.fonctionnement .card-number {
+  background-color: #9356dc;
+  border-radius: 1.5rem;
+  height: var(--label-height, 1.5rem);
+  width: var(--label-height, 1.5rem);
+  margin-left: -7px;
+  gap: 1.5rem;
+}
+
+.fonctionnement .card-number-text {
+  color: #ffffff;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 7px;
+  line-height: 1.5rem;
+}
+
+.fonctionnement .card-info {
+  padding-left: 20px;
+  color: grey;
+}
+
+.fonctionnement .card-info:hover {
+  color: #ffffff;
+}
+
+.fonctionnement .card-title {
+  padding-left: 20px;
+}
+
+.fonctionnement .card-title:hover {
+  color: #ffffff;
+}
+
+ol {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+/* Les restos*/
+.restos {
+  background-color: #f4f4f5;
+}
+
+.restos .section-grid {
+  padding: 20px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  border-radius: 0.5rem;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.cards a {
+  display: block;
+}
+
+.cards .new-tag {
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 2%;
+  padding: 0 0.6em;
+  position: absolute;
+  right: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.cards .cards-img img {
+  width: 100%;
+  height: 190px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cards .cards-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards .cards-header .cards-header-content {
+  margin-left: 20px;
+  color: black;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.cards .cards-header .cards-header-content .card-header-title {
+  margin-top: 0;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.cards .cards-header .cards-header-content .cards-header-para {
+  margin-top: -12px;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+
+.icon_like {
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin-right: 20px;
+  font-size: 30px;
+  color: black;
+}
+
+.icon_like:active {
+  background-color: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+  border: transparent;
 }
 
 .header .logo img {
   width: 60%;
 }
 
-@media screen and (max-width: 767px) {
-  .logo a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 4rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: -4.5rem;
-  }
-  .logo .icon-return {
-    color: #27272a;
-  }
-  .logo img {
-    width: 60%;
-    height: 2.5rem;
-    margin-left: 3rem;
-  }
-  .menu-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font: "Shrikhand", bold, cursive;
-  }
-  .cover img {
-    width: 100%;
-    height: 20rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .le-menu {
-    background-color: #f4f4f5;
-    margin-top: -60px;
-    position: relative;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 10px 0 0 10px;
-  }
-  .le-menu .card-dish {
-    background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 10px 10px 10px 10px;
-    padding: 15px 15px 15px 15px;
-    border-radius: 15px;
-    -webkit-box-shadow: 0 1px 5px grey;
-            box-shadow: 0 1px 5px grey;
-    cursor: pointer;
-  }
-  .le-menu .card-dish .card-dish:hover .slidein {
-    width: 300px;
-  }
-  .le-menu .card-dish-detail {
-    display: block;
-  }
-  .le-menu .card-dish-meal {
-    display: block;
-  }
-  .le-menu .card-price {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    margin: 0 3px -1px auto;
-  }
-  .le-menu .card-dish-accompagnement {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-  }
-  .le-menu .card-choose {
-    background-color: #99E2D0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    min-width: 0%;
-    -webkit-transition: 400ms linear;
-    transition: 400ms linear;
-    -webkit-transform-origin: right;
-            transform-origin: right;
-    position: relative;
-  }
+/*keyframe pour l'affichage des cards !plus simple!*/
+.logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -4.5rem;
+}
+
+.logo .icon-return {
+  color: #27272a;
+}
+
+.logo img {
+  width: 60%;
+  height: 2.5rem;
+  margin-left: 3rem;
+}
+
+.menu-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font: "Shrikhand", bold, cursive;
+}
+
+.cover img {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.le-menu {
+  background-color: #f4f4f5;
+  margin-top: -60px;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 10px 0 40px 10px;
+}
+
+.le-menu .card-dish {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 10px 10px 10px;
+  padding: 15px 15px 15px 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 1px 5px grey;
+          box-shadow: 0 1px 5px grey;
+  cursor: pointer;
+}
+
+.le-menu .card-dish .card-dish:hover .card-choose {
+  width: 300px;
+}
+
+.le-menu .card-dish-detail {
+  display: block;
+}
+
+.le-menu .card-dish-meal {
+  display: block;
+}
+
+.le-menu .card-dish-accompagnement {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.le-menu .card-right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.le-menu .card-right-side .card-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0 3px -1px auto;
+}
+
+.le-menu .card-right-side .card-choose {
+  background-color: #99e2d0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 0;
+  height: 100%;
+  position: relative;
+  border-radius: 6px 6px 6px 6px;
+  /*translate le + adapté*/
 }
 
 /*Mobile*/
@@ -329,6 +384,49 @@ ul {
     text-decoration: none;
     color: #ffffff;
   }
+}
+
+/* Apparition progressive des menus */
+@-webkit-keyframes card-dishes {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes card-dishes {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+/* Apparition checkbox */
+.card-dish:hover .card-choose {
+  width: 5%;
+  -webkit-transition-duration: 1200ms;
+          transition-duration: 1200ms;
+  margin-left: -40px;
+}
+
+.card-dish:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
+  width: 20px;
+  margin-left: 40px;
 }
 
 /*Mobile*/

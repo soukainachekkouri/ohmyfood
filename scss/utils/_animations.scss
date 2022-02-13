@@ -1,0 +1,33 @@
+
+
+
+
+/* Apparition progressive des menus */ 
+
+@keyframes card-dishes {
+    0% {
+      opacity: 0;
+      transform: translateY(200px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+/* Apparition checkbox */
+
+.card-dish:hover .card-choose{
+    width: 5%;
+    transition-duration: 1200ms;
+    margin-left: -40px;
+}
+
+.card-dish:hover i{
+    transform: rotate(360deg);
+    transition-duration: 800ms;
+    width: 20px;
+    margin-left: 40px;
+}
