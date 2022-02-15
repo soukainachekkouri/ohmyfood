@@ -6,6 +6,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 ul {
   list-style: none;
 }
@@ -262,7 +265,15 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font: "Shrikhand", bold, cursive;
+  font: "Shrikhand", cursive;
+}
+
+.menu-title .icon-like {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 2%;
+  position: relative;
 }
 
 .cover img {
@@ -281,44 +292,41 @@ ol {
   padding: 10px 0 40px 10px;
 }
 
-.le-menu .card-dish {
+.le-menu h2 {
+  margin-bottom: 0;
+}
+
+.le-menu .border {
+  background-color: #99e2d0;
+  width: 45px;
+  height: 0.2rem;
+  margin-bottom: 20px;
+}
+
+.card-dish {
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 10px 10px 10px 10px;
   padding: 15px 15px 15px 15px;
   border-radius: 15px;
   -webkit-box-shadow: 0 1px 5px grey;
           box-shadow: 0 1px 5px grey;
   cursor: pointer;
+  width: 85%;
+  min-height: rem-calc(70);
+  margin-bottom: rem-calc(20);
 }
 
-.le-menu .card-dish .card-dish:hover .card-choose {
-  width: 300px;
-}
-
-.le-menu .card-dish-detail {
-  display: block;
-}
-
-.le-menu .card-dish-meal {
-  display: block;
-}
-
-.le-menu .card-dish-accompagnement {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.le-menu .card-right-side {
+.card-dish .card-dish-detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.le-menu .card-right-side .card-price {
+.card-dish .card-dish-meal {
+  display: block;
+}
+
+.card-dish .card-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,23 +336,33 @@ ol {
   margin: 0 3px -1px auto;
 }
 
-.le-menu .card-right-side .card-choose {
-  background-color: #99e2d0;
+.card-dish .card-dish-accompagnement {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card-dish .card-choose {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 0;
-  height: 100%;
-  position: relative;
-  border-radius: 6px 6px 6px 6px;
+  position: absolute;
+  background-color: #99e2d0;
+  right: 20px;
+  width: 15%;
+  height: 10%;
+  -ms-flex-item-align: center;
+      align-self: center;
   /*translate le + adapté*/
+}
+
+.card-dish .card-choose i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  font-size: 100px;
+  width: 90%;
 }
 
 /*Mobile*/
@@ -412,23 +430,7 @@ ol {
   }
 }
 
-/* Apparition checkbox */
-.card-dish:hover .card-choose {
-  width: 5%;
-  -webkit-transition-duration: 1200ms;
-          transition-duration: 1200ms;
-  margin-left: -40px;
-}
-
-.card-dish:hover i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition-duration: 800ms;
-          transition-duration: 800ms;
-  width: 20px;
-  margin-left: 40px;
-}
-
+/* Apparition coeur */
 /*Mobile*/
 @media screen and (max-width: 767px) {
   /*Général*/

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .header .logo
 {
     & img{
@@ -30,7 +31,12 @@
     .menu-title
     {
         display: flex;
-        font: $font-logo;
+        font: "Shrikhand", cursive;
+        & .icon-like{
+            align-self: center;
+            margin-left: 2%;
+            position: relative;
+        }
     }
 
     .cover
@@ -50,50 +56,59 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         padding: 10px 0 40px 10px;
-        & .card-dish{
-            background-color: white;
-            display: flex;
-            margin: 10px 10px 10px 10px;
-            padding: 15px 15px 15px 15px;
-            border-radius: 15px;
-            box-shadow: 0 1px 5px grey;
-            cursor: pointer;
-            & .card-dish:hover .card-choose{
-                width: 300px;
-            }
+        & h2{
+            margin-bottom: 0;
         }
+        & .border{
+            background-color: #99e2d0;
+            width: 45px;
+            height: 0.2rem;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .card-dish{
+        background-color: white;
+        margin: 10px 10px 10px 10px;
+        padding: 15px 15px 15px 15px;
+        border-radius: 15px;
+        box-shadow: 0 1px 5px grey;
+        cursor: pointer;
+        width: 85%;
+        min-height: rem-calc(70);
+        margin-bottom: rem-calc(20);
         & .card-dish-detail{
-            display: block;
+            display: flex;
         }
         & .card-dish-meal{
             display: block;
+        }
+        & .card-price{
+            display: flex;
+            align-items: flex-end;
+            margin: 0 3px -1px auto;
         }
         & .card-dish-accompagnement{
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
         }
-        
-        .card-right-side{
+        & .card-choose {
             display: flex;
-            & .card-price{
+            position: absolute;
+            background-color: #99e2d0;
+            right: 20px;
+            width: 15%;
+            height: 10%;
+            align-self: center;
+            & i{
                 display: flex;
-                align-items: flex-end;
-                margin: 0 3px -1px auto;
+                position: absolute;
+                font-size: 100px;
+                width: 90%;
             }
-            & .card-choose {
-                background-color: $color-tertiary;
-                display: flex;
-                font-size: 2rem;
-                justify-content: center;
-                align-items: center;
-                width: 0;
-                height: 100%;
-                position: relative;
-                border-radius: 6px 6px 6px 6px;
-                /*translate le + adapté*/
-                
-            }
-         }
-
+            /*translate le + adapté*/
+        
+        }
     }

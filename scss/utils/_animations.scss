@@ -17,17 +17,4 @@
 }
 
 
-/* Apparition checkbox */
-
-.card-dish:hover .card-choose{
-    width: 5%;
-    transition-duration: 1200ms;
-    margin-left: -40px;
-}
-
-.card-dish:hover i{
-    transform: rotate(360deg);
-    transition-duration: 800ms;
-    width: 20px;
-    margin-left: 40px;
-}
+/* Apparition coeur */
