@@ -14,7 +14,6 @@
             display: flex;
             height: 4rem;
             align-items: center;
-            margin-left: -4.5rem;
         }
 
         & .icon-return{
@@ -32,6 +31,7 @@
     .menu-title
     {
         display: flex;
+        justify-content: space-between;
         & h1{
             font: $font-logo;
         }
@@ -40,6 +40,7 @@
     .icon-like{
         align-self: center;
         margin-left: 5%;
+        font-size: 2rem;
         & .full-heart{
             position: relative;
             right: 1.2rem;
@@ -67,7 +68,7 @@
         position: relative;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        padding: 10px 0 20px 15px;
+        padding: 10px 15px 20px 15px;
         & h2{
             margin-bottom: 0;
             font: $font-body;
@@ -102,7 +103,7 @@
         border-radius: 15px;
         box-shadow: 5px 5px 10px #D4D4D4;
         cursor: pointer;
-        width: 85%;
+        width: 87%;
         min-height: rem-calc(70);
         margin-bottom: rem-calc(20);
         & .card-dish-detail{
@@ -133,6 +134,7 @@
             width: 15%;
             height: 10%;
             align-self: center;
+            position: absolute;
             & i{
                 display: flex;
                 position: absolute;

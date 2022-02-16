@@ -53,61 +53,51 @@ main
 
 /*Comment ça marche */
 
-.fonctionnement .card
-{
-    display: flex;
-    flex-direction: row;
-    background-color: #f4f4f5;
-    border-radius: 1.5rem;
-    padding: 1.625rem var(--gap, 1.25rem) 1.625rem 0;
-    margin: 0 20px 20px 20px; 
-    gap: 1.25rem;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    transition: background-color .3s ease-in-out;
-    &:hover{
+.fonctionnement {
+    justify-content: space-between;
+    align-items: baseline;
+    & .card{
+        display: flex;
+        flex-direction: row;
+        background-color: #f4f4f5;
+        border-radius: 1.5rem;
+        padding: 1.625rem var(--gap, 1.25rem) 1.625rem 0;
+        margin: 0 20px 20px 20px; 
+        gap: 1.25rem;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        transition: background-color .3s ease-in-out;
+        & .card-info{
+            padding-left: 20px;
+            color: grey;
+        }
+        &:hover{
+            background-color: #f2eafb;
+            color: #9356dc;
+        }
+    }
+    & .card-number{
         background-color: #9356dc;
+        border-radius: 1.5rem;
+        height: var(--label-height, 1.5rem);
+        width: var(--label-height, 1.5rem);
+        margin-left: -7px;
+        gap: 1.5rem;
+    }
+    & .card-number-text{
+        color: #ffffff;
+        align-content: center;
+        margin-left: 7px;
+        line-height: 1.5rem;
+    }
+    &.card-title{
+        padding-left: 20px;
     }
 }
+
 
 .section-title
 {
     margin-left: 1rem;
-}
-
-.fonctionnement .card-number
-{
-    background-color: #9356dc;
-    border-radius: 1.5rem;
-    height: var(--label-height, 1.5rem);
-    width: var(--label-height, 1.5rem);
-    margin-left: -7px;
-    gap: 1.5rem;
-}
-
-.fonctionnement .card-number-text
-{
-    color: #ffffff;
-    align-content: center;
-    margin-left: 7px;
-    line-height: 1.5rem;
-}
-
-
-.fonctionnement .card-info
-{
-    padding-left: 20px;
-    color: grey;
-    &:hover{
-        color: #ffffff;
-    }
-}
-
-.fonctionnement .card-title
-{
-    padding-left: 20px;
-    &:hover{
-        color: #ffffff;
-    }
 }
 
 ol
@@ -120,11 +110,16 @@ ol
 .restos
 {
     background-color: #f4f4f5;
+    padding-top: 10px;
+    padding-bottom: 5px;
     & .section-grid{
         padding: 20px;
     }
 }
 
+.section-title{
+    margin-top: 20px;
+}
 
 .cards{
     display: flex;

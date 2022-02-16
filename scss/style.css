@@ -84,6 +84,15 @@ main {
 }
 
 /*Comment ça marche */
+.fonctionnement {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 .fonctionnement .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,12 +112,14 @@ main {
   transition: background-color .3s ease-in-out;
 }
 
-.fonctionnement .card:hover {
-  background-color: #9356dc;
+.fonctionnement .card .card-info {
+  padding-left: 20px;
+  color: grey;
 }
 
-.section-title {
-  margin-left: 1rem;
+.fonctionnement .card:hover {
+  background-color: #f2eafb;
+  color: #9356dc;
 }
 
 .fonctionnement .card-number {
@@ -128,21 +139,12 @@ main {
   line-height: 1.5rem;
 }
 
-.fonctionnement .card-info {
-  padding-left: 20px;
-  color: grey;
-}
-
-.fonctionnement .card-info:hover {
-  color: #ffffff;
-}
-
-.fonctionnement .card-title {
+.fonctionnement.card-title {
   padding-left: 20px;
 }
 
-.fonctionnement .card-title:hover {
-  color: #ffffff;
+.section-title {
+  margin-left: 1rem;
 }
 
 ol {
@@ -153,10 +155,16 @@ ol {
 /* Les restos*/
 .restos {
   background-color: #f4f4f5;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
 .restos .section-grid {
   padding: 20px;
+}
+
+.section-title {
+  margin-top: 20px;
 }
 
 .cards {
@@ -257,7 +265,6 @@ ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: -4.5rem;
 }
 
 .logo .icon-return {
@@ -274,6 +281,9 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu-title h1 {
@@ -285,6 +295,7 @@ ol {
       -ms-grid-row-align: center;
       align-self: center;
   margin-left: 5%;
+  font-size: 2rem;
 }
 
 .icon-like .full-heart {
@@ -313,7 +324,7 @@ ol {
   position: relative;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding: 10px 0 20px 15px;
+  padding: 10px 15px 20px 15px;
 }
 
 .le-menu h2 {
@@ -350,7 +361,7 @@ ol {
   -webkit-box-shadow: 5px 5px 10px #D4D4D4;
           box-shadow: 5px 5px 10px #D4D4D4;
   cursor: pointer;
-  width: 85%;
+  width: 87%;
   min-height: rem-calc(70);
   margin-bottom: rem-calc(20);
 }
@@ -396,6 +407,7 @@ ol {
   height: 10%;
   -ms-flex-item-align: center;
       align-self: center;
+  position: absolute;
   /*translate le + adapté*/
 }
 
@@ -432,6 +444,11 @@ header {
           align-items: center;
 }
 
+header a {
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
 /* Mobile */
 .footer {
   background-color: #27272a;
@@ -448,6 +465,10 @@ header {
 .footer-list {
   color: #ffffff;
   margin-left: -40px;
+}
+
+.footer-list li {
+  margin-bottom: 5px;
 }
 
 .footer-link {
