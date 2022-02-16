@@ -42,7 +42,7 @@
         margin-left: 5%;
         font-size: 2rem;
         & .full-heart{
-            position: relative;
+            position: absolute;
             right: 1.2rem;
             background: linear-gradient($color-primary,$color-secondary);
             color: transparent;
@@ -99,11 +99,11 @@
     .card-dish{
         background-color: white;
         margin: 10px 10px 10px 10px;
-        padding: 15px 15px 15px 15px;
         border-radius: 15px;
         box-shadow: 5px 5px 10px #D4D4D4;
         cursor: pointer;
         width: 87%;
+        display: inline-flex;
         min-height: rem-calc(70);
         margin-bottom: rem-calc(20);
         & .card-dish-detail{
@@ -126,20 +126,23 @@
             text-overflow: ellipsis;
             overflow: hidden;
             font-size: 14px;
+            display: flex;
+            align-items: flex-end;
         }
         & .card-choose {
             display: flex;
             background-color: #99e2d0;
             right: 20px;
             width: 15%;
-            height: 10%;
+            height: 100px;
             align-self: center;
-            position: absolute;
+            color: #ffffff;
+            border-radius: 0 15px 15px 0;
+            font-size: $font-size-lg;
+            transition: transform 5s ease-in-out;
+            padding: 5px 15px 5px 15px;
             & i{
-                display: flex;
-                position: absolute;
-                font-size: 100px;
-                width: 90%;
+                margin: auto;
             }
             /*translate le + adapté*/
         
