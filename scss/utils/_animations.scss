@@ -4,17 +4,35 @@
 
 /* Apparition progressive des menus */ 
 
-@keyframes card-dishes {
+@keyframes delay {
     0% {
       opacity: 0;
-      transform: translateY(200px);
     }
   
     100% {
       opacity: 1;
-      transform: translateY(0);
     }
 }
 
+.starter{
+  animation: delay 1s ease-in-out;
+}
 
-/* Apparition coeur */
+.second{
+  animation: delay 2s ease-in-out;
+}
+
+.third{
+  animation: delay 3s ease-in-out;
+}
+
+
+/* Coeur menu*/
+.icon-like:hover .full-heart{
+  transform: scale(1);
+}
+
+.icon-like:hover .empty-heart{
+  background: linear-gradient($color-primary, $color-secondary);
+  color: transparent;
+}

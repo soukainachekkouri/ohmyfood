@@ -23,6 +23,15 @@ ul {
   border-color: transparent;
 }
 
+.menu-choice-btn-order {
+  height: 3rem;
+  border-radius: 2rem;
+  background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+  width: 40%;
+  color: #ffffff;
+  border-color: transparent;
+}
+
 /*Localisation*/
 form {
   background-color: #EAEAEA;
@@ -265,15 +274,30 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font: "Shrikhand", cursive;
 }
 
-.menu-title .icon-like {
+.menu-title h1 {
+  font: "Shrikhand", bold, cursive;
+}
+
+.icon-like {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-left: 2%;
+  margin-left: 5%;
+}
+
+.icon-like .full-heart {
   position: relative;
+  right: 1.2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  color: transparent;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .cover img {
@@ -289,11 +313,14 @@ ol {
   position: relative;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding: 10px 0 40px 10px;
+  padding: 10px 0 20px 15px;
 }
 
 .le-menu h2 {
   margin-bottom: 0;
+  font: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
 }
 
 .le-menu .border {
@@ -303,13 +330,25 @@ ol {
   margin-bottom: 20px;
 }
 
+.les-entrees {
+  margin-bottom: 35px;
+}
+
+.les-plats {
+  margin-bottom: 35px;
+}
+
+.les-desserts {
+  margin-bottom: 35px;
+}
+
 .card-dish {
   background-color: white;
   margin: 10px 10px 10px 10px;
   padding: 15px 15px 15px 15px;
   border-radius: 15px;
-  -webkit-box-shadow: 0 1px 5px grey;
-          box-shadow: 0 1px 5px grey;
+  -webkit-box-shadow: 5px 5px 10px #D4D4D4;
+          box-shadow: 5px 5px 10px #D4D4D4;
   cursor: pointer;
   width: 85%;
   min-height: rem-calc(70);
@@ -320,10 +359,13 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 300;
 }
 
 .card-dish .card-dish-meal {
   display: block;
+  font-weight: 900;
+  margin-bottom: 5px;
 }
 
 .card-dish .card-price {
@@ -334,19 +376,20 @@ ol {
       -ms-flex-align: end;
           align-items: flex-end;
   margin: 0 3px -1px auto;
+  font-weight: 900;
 }
 
 .card-dish .card-dish-accompagnement {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 14px;
 }
 
 .card-dish .card-choose {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
   background-color: #99e2d0;
   right: 20px;
   width: 15%;
@@ -365,72 +408,98 @@ ol {
   width: 90%;
 }
 
+.menu-choice-btn {
+  text-align: center;
+  padding: 40px 12px 0 0;
+}
+
+.menu-choice-btn .menu-choice-btn-order {
+  width: 180px;
+}
+
 /*Mobile*/
-@media screen and (max-width: 767px) {
-  /*Header*/
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 4rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+/*Header*/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Mobile */
-@media screen and (max-width: 767px) {
-  .footer {
-    background-color: #27272a;
-    color: #ffffff;
-    padding: 1.125rem 1.5625rem 2.25rem;
-  }
-  .logo-footer {
-    color: #ffffff;
-    size: 60px;
-    font-family: "Shrikhand", bold, cursive;
-  }
-  .footer-list {
-    color: #ffffff;
-    margin-left: -40px;
-  }
-  .footer-link {
-    text-decoration: none;
-    color: #ffffff;
-  }
+.footer {
+  background-color: #27272a;
+  color: #ffffff;
+  padding: 1.125rem 1.5625rem 2.25rem;
+}
+
+.logo-footer {
+  color: #ffffff;
+  size: 60px;
+  font-family: "Shrikhand", bold, cursive;
+}
+
+.footer-list {
+  color: #ffffff;
+  margin-left: -40px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* Apparition progressive des menus */
-@-webkit-keyframes card-dishes {
+@-webkit-keyframes delay {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(200px);
-            transform: translateY(200px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
 }
-@keyframes card-dishes {
+@keyframes delay {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(200px);
-            transform: translateY(200px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
 }
 
-/* Apparition coeur */
+.starter {
+  -webkit-animation: delay 1s ease-in-out;
+          animation: delay 1s ease-in-out;
+}
+
+.second {
+  -webkit-animation: delay 2s ease-in-out;
+          animation: delay 2s ease-in-out;
+}
+
+.third {
+  -webkit-animation: delay 3s ease-in-out;
+          animation: delay 3s ease-in-out;
+}
+
+/* Coeur menu*/
+.icon-like:hover .full-heart {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.icon-like:hover .empty-heart {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(#9356dc, #ff79da);
+  color: transparent;
+}
+
 /*Mobile*/
 @media screen and (max-width: 767px) {
   /*Général*/
