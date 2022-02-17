@@ -154,6 +154,7 @@ ol
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-right: 20px;
         & .cards-header-content
         {
             margin-left: 20px;
@@ -174,12 +175,12 @@ ol
     }
 } 
 
-.icon_like
+/*.icon_like
 {
     justify-items: center;
     align-items: center;
     justify-items: center;
-    margin-right: 20px;
+    margin-right: 40px;
     font-size: 30px;
     color: black;
     &:active {
@@ -187,3 +188,4 @@ ol
         border: transparent;
     }
 }
+*/

@@ -32,23 +32,36 @@
     {
         display: flex;
         justify-content: space-between;
-        & h1{
-            font: $font-logo;
-        }
+        align-items: center;
     }
 
     .icon-like{
-        align-self: center;
         margin-left: 5%;
         font-size: 2rem;
+        &:hover .full-heart{
+            opacity: 1;
+        }
+        &:hover .empty-heart{
+            opacity: 0;
+        }
+        & i{
+            font-size: 25px;
+        }
+        & .empty-heart{
+            position: absolute;
+            right: 1.2rem;
+            opacity: 1;
+            color: grey;
+        }
         & .full-heart{
             position: absolute;
             right: 1.2rem;
             background: linear-gradient($color-primary,$color-secondary);
-            color: transparent;
+            opacity: 0;
             transform: scale(0);
-            transition: 0.3s ease-in-out;
-            z-index: 1;
+            transition: opacity 1000ms;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 
@@ -97,15 +110,32 @@
     }
 
     .card-dish{
+        position: relative;
         background-color: white;
         margin: 10px 10px 10px 10px;
+        padding: 0% 0% 0% 10px;
         border-radius: 15px;
         box-shadow: 5px 5px 10px #D4D4D4;
         cursor: pointer;
         width: 87%;
-        display: inline-flex;
-        min-height: rem-calc(70);
-        margin-bottom: rem-calc(20);
+        height: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        animation: delay 2000ms;
+        & .card-dish-accompagnement{
+            padding-right: 35px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            transition: width 400ms;
+            &:hover{
+                width: calc(94%-70px);
+            }
+        }
         & .card-dish-detail{
             display: flex;
             font-weight: $light;
@@ -116,37 +146,51 @@
             margin-bottom: 5px;
         }
         & .card-price{
-            display: flex;
-            align-items: flex-end;
-            margin: 0 3px -1px auto;
-            font-weight: $bold
-        }
-        & .card-dish-accompagnement{
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            font-size: 14px;
-            display: flex;
-            align-items: flex-end;
+            position: absolute;
+            right: 5%;
+            bottom: 14px;
+            font-size: 110%;
+            font-weight: $bold;
+            transform: translateX(0);
+            transition: transform 400ms;
         }
         & .card-choose {
             display: flex;
             background-color: #99e2d0;
-            right: 20px;
-            width: 15%;
+            right: -5px;
+            top: 0;
+            width: 70px;
             height: 100px;
-            align-self: center;
-            color: #ffffff;
+            align-items: center;
             border-radius: 0 15px 15px 0;
             font-size: $font-size-lg;
-            transition: transform 5s ease-in-out;
+            transform: translateX(105%);
+            transition: transform 400ms;
             padding: 5px 15px 5px 15px;
+            position: absolute;
+            justify-content: space-between;
             & i{
+                color: #ffffff;
                 margin: auto;
+                font-size: 30px;
+                transform: rotate(-1turn);
+                transition: transform 400ms;
+                &:hover{
+                    transform: rotate(0turn);
+                }
+            }
+            &:hover{
+                transform: translateX(0);
             }
             /*translate le + adapté*/
         
         }
+    }
+
+    .btn-menu{
+        position: relative;
+        width: 94%;
+        height: 80px;
     }
     .menu-choice-btn{
         text-align: center;
