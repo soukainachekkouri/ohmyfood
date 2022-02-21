@@ -99,10 +99,10 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #f4f4f5;
   border-radius: 1.5rem;
   padding: 1.625rem var(--gap, 1.25rem) 1.625rem 0;
@@ -194,7 +194,7 @@ ol {
   border-radius: 2%;
   padding: 0 0.6em;
   position: absolute;
-  right: 1.5rem;
+  /*right: 1.5rem; --> pq ca ne fonctionne pas sur la version web ?*/
   margin-top: 0.5rem;
 }
 
@@ -253,6 +253,76 @@ ol {
     }
 }
 */
+@media screen and (min-width: 1024px) {
+  /*Comment ça marche */
+  .fonctionnement {
+    margin: 40px 0px 40px 0px;
+  }
+  .fonctionnement ol {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 30px;
+  }
+  .fonctionnement .card {
+    width: 25%;
+    gap: 2.25rem;
+  }
+  .fonctionnement .card .card-info {
+    padding-left: O;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .fonctionnement .card .card-number {
+    background-color: #9356dc;
+    border-radius: 1.5rem;
+    height: var(--label-height, 1.5rem);
+    width: var(--label-height, 1.5rem);
+    margin: -35px 0px 0px 20px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    gap: 1.5rem;
+  }
+  .fonctionnement .card .card-title {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  /* Les restos*/
+  .restos .section-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 0px 0px 0px 40px;
+  }
+  .restos .section-grid .cards {
+    width: 90%;
+  }
+  .restos .section-grid .cards .cards-header {
+    margin-right: -33px;
+  }
+  .restos .section-grid .cards .cards-img {
+    width: 110.9%;
+    height: 220px;
+  }
+  .restos .section-grid .cards .cards-img img {
+    height: 212px;
+  }
+  .section-title {
+    margin-left: 2.5rem;
+  }
+}
+
 .header .logo img {
   width: 60%;
 }
@@ -292,7 +362,7 @@ ol {
 
 .icon-like {
   margin-left: 5%;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .icon-like:hover .full-heart {
@@ -309,13 +379,11 @@ ol {
 
 .icon-like .empty-heart {
   position: absolute;
-  right: 1.2rem;
   opacity: 1;
   color: grey;
 }
 
 .icon-like .full-heart {
-  position: absolute;
   right: 1.2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
@@ -374,24 +442,21 @@ ol {
   position: relative;
   background-color: white;
   margin: 10px 10px 10px 10px;
-  padding: 0% 0% 0% 10px;
+  padding: 0% 0% 0% 15px;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 10px #D4D4D4;
           box-shadow: 5px 5px 10px #D4D4D4;
   cursor: pointer;
-  width: 87%;
   height: 80px;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-animation: delay 2000ms;
           animation: delay 2000ms;
 }
 
 .card-dish .card-dish-accompagnement {
   padding-right: 35px;
+  margin-top: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -399,16 +464,8 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-transition: width 400ms;
   transition: width 400ms;
-}
-
-.card-dish .card-dish-accompagnement:hover {
-  width: calc(94%-70px);
 }
 
 .card-dish .card-dish-detail {
@@ -427,7 +484,7 @@ ol {
 .card-dish .card-price {
   position: absolute;
   right: 5%;
-  bottom: 14px;
+  bottom: 16px;
   font-size: 110%;
   font-weight: 900;
   -webkit-transform: translateX(0);
@@ -446,7 +503,7 @@ ol {
   right: -5px;
   top: 0;
   width: 70px;
-  height: 100px;
+  height: 71px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -476,16 +533,6 @@ ol {
   transition: -webkit-transform 400ms;
   transition: transform 400ms;
   transition: transform 400ms, -webkit-transform 400ms;
-}
-
-.card-dish .card-choose i:hover {
-  -webkit-transform: rotate(0turn);
-          transform: rotate(0turn);
-}
-
-.card-dish .card-choose:hover {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
 }
 
 .btn-menu {
@@ -550,6 +597,36 @@ header a {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1024px) {
+  .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-wrapper .logo-footer {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 2rem;
+  }
+  .footer-wrapper .footer-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+  }
+  .footer-wrapper .footer-list li {
+    margin-right: 2%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
 /* Apparition progressive des menus */
 @-webkit-keyframes delay {
   0% {
@@ -557,6 +634,7 @@ header a {
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
   }
+  /*ajouter d'autre intervalles*/
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -569,6 +647,7 @@ header a {
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
   }
+  /*ajouter d'autre intervalles*/
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -601,6 +680,26 @@ header a {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
   background: linear-gradient(#9356dc, #ff79da);
   color: transparent;
+}
+
+/* Apparition checkbox*/
+.card-choose:hover .card-choose {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.card-choose:hover .card-choose i {
+  -webkit-transform: rotate(0turn);
+          transform: rotate(0turn);
+}
+
+.card-choose:hover .card-price {
+  -webkit-transform: translateX(-400%);
+          transform: translateX(-400%);
+}
+
+.card-choose:hover p {
+  width: calc(94%-70px);
 }
 
 /*Mobile*/

@@ -29,3 +29,26 @@
             text-decoration: none;
             color: #ffffff;
         }
+
+        @media screen and (min-width:1024px) {
+            .footer-wrapper
+            {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-between;
+               & .logo-footer
+               {
+                   align-self: center; 
+                   font-size: 2rem;
+               }
+               & .footer-list{
+                    display: flex;
+                    margin-left: 0;
+                    & li{
+                        margin-right: 2%;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }

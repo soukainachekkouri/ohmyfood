@@ -58,7 +58,7 @@ main
     align-items: baseline;
     & .card{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background-color: #f4f4f5;
         border-radius: 1.5rem;
         padding: 1.625rem var(--gap, 1.25rem) 1.625rem 0;
@@ -137,7 +137,7 @@ ol
         border-radius: 2%;
         padding: 0 0.6em;
         position: absolute;
-        right: 1.5rem;
+        /*right: 1.5rem; --> pq ca ne fonctionne pas sur la version web ?*/
         margin-top: 0.5rem;
     }
     & .cards-img {
@@ -189,3 +189,67 @@ ol
     }
 }
 */
+
+@media screen and (min-width:1024px) {
+
+    /*Comment ça marche */
+
+    .fonctionnement {
+        margin: 40px 0px 40px 0px;
+        & ol{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        & .card{
+            width: 25%;
+            gap: 2.25rem;
+            & .card-info{
+                padding-left: O;
+                align-self: center;
+            }
+            & .card-number{
+                background-color: #9356dc;
+                border-radius: 1.5rem;
+                height: var(--label-height, 1.5rem);
+                width: var(--label-height, 1.5rem);
+                margin: -35px 0px 0px 20px;
+                align-self: center;
+                gap: 1.5rem;
+            }
+            & .card-title{
+                align-self: center;
+            }
+        }
+    }
+
+    /* Les restos*/
+
+    .restos
+    {
+        & .section-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 0px 0px 0px 40px;
+            & .cards{
+                width: 90%;
+                & .cards-header{
+                    margin-right: -33px;
+                }
+                & .cards-img{
+                    width: 110.9%;
+                    height: 220px;
+                    & img{
+                        height: 212px;
+                    }
+                }
+                & .new-tag{
+                }     
+            }
+        }    
+    }
+    .section-title{
+        margin-left: 2.5rem;
+    }
+}

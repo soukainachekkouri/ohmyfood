@@ -9,6 +9,8 @@
       opacity: 0;
       transform: translateY(20px);
     }
+
+    /*ajouter d'autre intervalles*/
   
     100% {
       opacity: 1;
@@ -37,4 +39,20 @@
 .icon-like:hover .empty-heart{
   background: linear-gradient($color-primary, $color-secondary);
   color: transparent;
+}
+
+/* Apparition checkbox*/
+.card-choose{
+  &:hover .card-choose{
+    transform: translateX(0);
+  }
+  &:hover .card-choose i{
+    transform: rotate(0turn);
+  }
+  &:hover .card-price{
+    transform: translateX(-400%);
+  }
+  &:hover p{
+    width: calc(94%-70px);
+  }
 }
