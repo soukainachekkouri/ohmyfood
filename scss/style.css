@@ -34,6 +34,22 @@ h1 {
   border-color: transparent;
 }
 
+/*bouton menu*/
+.btn-menu {
+  position: relative;
+  width: 94%;
+  height: 80px;
+}
+
+.menu-choice-btn {
+  text-align: center;
+  padding: 40px 12px 20px 0;
+}
+
+.menu-choice-btn .menu-choice-btn-order {
+  width: 180px;
+}
+
 /*Localisation*/
 form {
   background-color: #EAEAEA;
@@ -99,10 +115,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: #f4f4f5;
   border-radius: 1.5rem;
   padding: 1.625rem var(--gap, 1.25rem) 1.625rem 0;
@@ -269,11 +281,18 @@ ol {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 30px;
+    margin-top: 54px;
   }
   .fonctionnement .card {
     width: 25%;
-    gap: 2.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.35rem;
   }
   .fonctionnement .card .card-info {
     padding-left: O;
@@ -284,13 +303,17 @@ ol {
   .fonctionnement .card .card-number {
     background-color: #9356dc;
     border-radius: 1.5rem;
-    height: var(--label-height, 1.5rem);
-    width: var(--label-height, 1.5rem);
+    height: var(--label-height, 1.8rem);
+    width: var(--label-height, 1.8rem);
     margin: -35px 0px 0px 20px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     gap: 1.5rem;
+  }
+  .fonctionnement .card .card-number .card-number-text {
+    margin-left: 9px;
+    line-height: 1.8rem;
   }
   .fonctionnement .card .card-title {
     -ms-flex-item-align: center;
@@ -301,22 +324,24 @@ ol {
   .restos .section-grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 0px 0px 0px 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
   .restos .section-grid .cards {
     width: 90%;
   }
   .restos .section-grid .cards .cards-header {
-    margin-right: -33px;
+    margin-right: -21px;
   }
   .restos .section-grid .cards .cards-img {
     width: 110.9%;
-    height: 220px;
+    height: 183px;
   }
   .restos .section-grid .cards .cards-img img {
-    height: 212px;
+    height: 183px;
   }
   .section-title {
     margin-left: 2.5rem;
@@ -327,7 +352,6 @@ ol {
   width: 60%;
 }
 
-/*keyframe pour l'affichage des cards !plus simple!*/
 .logo a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -543,11 +567,44 @@ ol {
 
 .menu-choice-btn {
   text-align: center;
-  padding: 40px 12px 0 0;
+  padding: 30px 12px 50px 0;
 }
 
 .menu-choice-btn .menu-choice-btn-order {
   width: 180px;
+}
+
+@media screen and (min-width: 1024px) {
+  /* Le titres */
+  .le-menu {
+    padding: 10px 60px 79px 50px;
+    margin-top: -5px;
+  }
+  .le-menu .la-carte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 30px;
+  }
+  .le-menu h2 {
+    margin-bottom: 0;
+    font: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .le-menu .border {
+    background-color: #99e2d0;
+    width: 45px;
+    height: 0.2rem;
+    margin-bottom: 20px;
+  }
+  .card-dish {
+    padding: 0px 15px 0px 15px;
+    width: 370px;
+  }
 }
 
 /*Mobile*/
@@ -656,18 +713,18 @@ header a {
 }
 
 .starter {
-  -webkit-animation: delay 1s ease-in-out 0.3s 1 normal both;
-          animation: delay 1s ease-in-out 0.3s 1 normal both;
+  -webkit-animation: delay 1s ease-in-out 0.6s 1 normal both;
+          animation: delay 1s ease-in-out 0.6s 1 normal both;
 }
 
 .second {
-  -webkit-animation: delay 2s ease-in-out;
-          animation: delay 2s ease-in-out;
+  -webkit-animation: delay 5s ease-in-out;
+          animation: delay 5s ease-in-out;
 }
 
 .third {
-  -webkit-animation: delay 3s ease-in-out;
-          animation: delay 3s ease-in-out;
+  -webkit-animation: delay 8s ease-in-out;
+          animation: delay 8s ease-in-out;
 }
 
 /* Coeur menu*/
