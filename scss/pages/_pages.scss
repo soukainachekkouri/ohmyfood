@@ -112,18 +112,29 @@
         border-radius: 15px;
         box-shadow: 5px 5px 10px #D4D4D4;
         cursor: pointer;
+        width: 90%;
         height: 80px;
         overflow: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
         animation: delay 2000ms;
-        & .card-dish-accompagnement{
+        &:hover >.card-choose{
+            /*va s'appliquer sur la div choose*/
+            transform: translateX(0);
+        }
+        &:hover >.card-price{
+            transform: translateX(-250%);
+        }
+        &:hover > p{
+            width: calc(90%-200px);
+        }
+        & p{
             padding-right: 35px;
             margin-top: 10px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            width: 100%;
-            display: flex;
+            display: block;
             transition: width 400ms;
         }
         & .card-dish-detail{
@@ -143,32 +154,31 @@
             font-weight: $bold;
             transform: translateX(0);
             transition: transform 400ms;
+
         }
-        & .card-choose {
-            display: flex;
-            background-color: #99e2d0;
-            right: -5px;
-            top: 0;
-            width: 70px;
-            height: 71px;
-            align-items: center;
-            border-radius: 0 15px 15px 0;
-            font-size: $font-size-lg;
-            transform: translateX(105%);
+    }
+
+    .card-choose {
+        display: flex;
+        background-color: #99e2d0;
+        right: -5px;
+        top: 0;
+        width: 200px;
+        height: 71px;
+        align-items: center;
+        border-radius: 0 15px 15px 0;
+        font-size: $font-size-lg;
+        transform: translateX(105%);
+        transition: transform 400ms;
+        padding: 5px 15px 5px 15px;
+        position: absolute;
+        justify-content: space-between;
+        & i{
+            color: #ffffff;
+            margin: auto;
+            font-size: 30px;
+            transform: rotate(-1turn);
             transition: transform 400ms;
-            padding: 5px 15px 5px 15px;
-            position: absolute;
-            justify-content: space-between;
-            & i{
-                color: #ffffff;
-                margin: auto;
-                font-size: 30px;
-                transform: rotate(-1turn);
-                transition: transform 400ms;
-            }
-            
-            /*translate le + adapté*/
-        
         }
     }
 

@@ -122,18 +122,18 @@ main {
   gap: 1.25rem;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.fonctionnement .card:hover {
   -webkit-transition: background-color .3s ease-in-out;
   transition: background-color .3s ease-in-out;
+  background-color: #f2eafb;
+  color: #9356dc;
 }
 
 .fonctionnement .card .card-info {
   padding-left: 20px;
   color: grey;
-}
-
-.fonctionnement .card:hover {
-  background-color: #f2eafb;
-  color: #9356dc;
 }
 
 .fonctionnement .card-number {
@@ -471,23 +471,37 @@ ol {
   -webkit-box-shadow: 5px 5px 10px #D4D4D4;
           box-shadow: 5px 5px 10px #D4D4D4;
   cursor: pointer;
+  width: 90%;
   height: 80px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   -webkit-animation: delay 2000ms;
           animation: delay 2000ms;
 }
 
-.card-dish .card-dish-accompagnement {
+.card-dish:hover > .card-choose {
+  /*va s'appliquer sur la div choose*/
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.card-dish:hover > .card-price {
+  -webkit-transform: translateX(-250%);
+          transform: translateX(-250%);
+}
+
+.card-dish:hover > p {
+  width: calc(90%-200px);
+}
+
+.card-dish p {
   padding-right: 35px;
   margin-top: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-transition: width 400ms;
   transition: width 400ms;
 }
@@ -519,14 +533,14 @@ ol {
   transition: transform 400ms, -webkit-transform 400ms;
 }
 
-.card-dish .card-choose {
+.card-choose {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #99e2d0;
   right: -5px;
   top: 0;
-  width: 70px;
+  width: 200px;
   height: 71px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -544,10 +558,9 @@ ol {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /*translate le + adapté*/
 }
 
-.card-dish .card-choose i {
+.card-choose i {
   color: #ffffff;
   margin: auto;
   font-size: 30px;
@@ -647,6 +660,7 @@ header a {
 
 .footer-list li {
   margin-bottom: 5px;
+  margin-right: 30px;
 }
 
 .footer-link {
@@ -740,25 +754,19 @@ header a {
 }
 
 /* Apparition checkbox*/
-.card-choose:hover .card-choose {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.card-choose:hover .card-choose i {
-  -webkit-transform: rotate(0turn);
-          transform: rotate(0turn);
-}
-
-.card-choose:hover .card-price {
-  -webkit-transform: translateX(-400%);
-          transform: translateX(-400%);
-}
-
-.card-choose:hover p {
-  width: calc(94%-70px);
-}
-
+/*.card-choose{
+  &:hover .card-choose{
+    transform: translateX(0);
+  }
+  &:hover .card-choose i{
+    transform: rotate(0turn);
+  }
+  &:hover .card-price{
+    transform: translateX(-400%);
+  }
+  &:hover p{
+    width: calc(94%-70px);
+  }*/
 /*Mobile*/
 @media screen and (max-width: 767px) {
   /*Général*/
