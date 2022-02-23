@@ -631,7 +631,7 @@ header a {
 .footer {
   background-color: #27272a;
   color: #ffffff;
-  padding: 1.125rem 1.5625rem 2.25rem;
+  padding: 1.125rem 1.5625rem 1.25rem;
 }
 
 .logo-footer {
@@ -642,7 +642,7 @@ header a {
 
 .footer-list {
   color: #ffffff;
-  margin-left: -40px;
+  margin-right: 40px;
 }
 
 .footer-list li {
