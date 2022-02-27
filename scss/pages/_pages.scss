@@ -127,10 +127,11 @@
         }
         &:hover > p{
             width: calc(90%-200px);
+            padding-right: 140px;
         }
         & p{
-            padding-right: 35px;
-            margin-top: 10px;
+            padding-right: 56px;
+            margin-top: 13px;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -163,7 +164,7 @@
         background-color: #99e2d0;
         right: -5px;
         top: 0;
-        width: 200px;
+        width: 70px;
         height: 71px;
         align-items: center;
         border-radius: 0 15px 15px 0;

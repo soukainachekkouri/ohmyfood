@@ -61,17 +61,31 @@ main
         background-color: #f4f4f5;
         border-radius: 1.5rem;
         padding: 1.625rem var(--gap, 1.25rem) 1.625rem 0;
-        margin: 0 20px 20px 20px; 
+        margin: 0 30px 20px 30px; 
         gap: 1.25rem;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         &:hover{
             transition: background-color .3s ease-in-out;
             background-color: #f2eafb;
-            color: #9356dc;
         }
-        & .card-info{
-            padding-left: 20px;
+        & i{
+            padding-left: 0px;
             color: grey;
+            align-self: center;
+            margin-top: 10px;
+            font-size: 20px;
+            &:hover{
+                transition: color .3s ease-in-out;
+                color: #9356dc;
+            }
+        }
+        & p{
+            padding-left: 20px;
+            color: black;
+            &:hover{
+                transition: color .3s ease-in-out;
+                color: #9356dc;
+            }
         }
     }
     & .card-number{
@@ -81,15 +95,13 @@ main
         width: var(--label-height, 1.5rem);
         margin-left: -7px;
         gap: 1.5rem;
+        align-self: center;
     }
     & .card-number-text{
         color: #ffffff;
         align-content: center;
         margin-left: 7px;
         line-height: 1.5rem;
-    }
-    &.card-title{
-        padding-left: 20px;
     }
 }
 
@@ -113,6 +125,7 @@ ol
     padding-bottom: 5px;
     & .section-grid{
         padding: 20px;
+
     }
 }
 
@@ -127,6 +140,7 @@ ol
     margin-bottom: 20px;
     border-radius: 0.5rem;
     text-decoration: solid;
+    margin-right: 10px;
     & a {
         display: block;
     }
@@ -195,18 +209,16 @@ ol
 
     .fonctionnement {
         margin: 40px 0px 40px 0px;
-        & ol{
+        & .section-grid1{
             display: flex;
-            flex-direction: row;
             justify-content: center;
-            margin-top: 54px;
         }
         & .card{
             width: 25%;
             display: flex;
             flex-direction: column;
             gap: 1.35rem;
-            & .card-info{
+            & i{
                 padding-left: O;
                 align-self: center;
             }
@@ -215,7 +227,7 @@ ol
                 border-radius: 1.5rem;
                 height: var(--label-height, 1.8rem);
                 width: var(--label-height, 1.8rem);
-                margin: -35px 0px 0px 20px;
+                margin: -35px 0px 0px 0px;
                 align-self: center;
                 gap: 1.5rem;
                 & .card-number-text{
@@ -234,9 +246,9 @@ ol
     .restos
     {
         & .section-grid{
-            display: grid;
+            display: flex;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            padding: 0px 0px 0px 40px;
+            padding: 0px 21px 0px 40px;
             margin-bottom: 30px;
             margin-top: 30px;
             & .cards{
