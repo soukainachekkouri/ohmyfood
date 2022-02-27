@@ -12,28 +12,9 @@
   background-color: white;
   position: fixed;
   z-index: 999;
-  animation: background 3s both;
+  animation:  3s both;
 }
 
-.loader > span {
-  font-size: 400%;
-  @include responsive(soleil) {
-    font-size: 600%;
-  }
-  @include responsive(terre) {
-    font-size: 500%;
-  }
-  @include responsive(pluton) {
-    font-size: 250%;
-  }
-  font-family: $font-logo;
-  color: $color-bg-dark;
-  display: inline-block;
-  animation: flip 3s none;
-  transform-origin: 0 70%;
-  transform-style: preserve-3d;
-  text-align: center;
-}
 
 
 /* Apparition progressive des menus */ 
