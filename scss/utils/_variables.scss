@@ -14,3 +14,19 @@ $color-icons: #8d8d8d;
 
 /* Couleurs de bouton */ 
 $color-button: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
+
+
+$breakpoints: (
+  "pluton": (
+    max-width: 345px,
+  ),
+  "terre": (
+    min-width: 600px,
+  ),
+  "jupiter": (
+    min-width: 900px,
+  ),
+  "soleil": (
+    min-width: 1200px,
+  ),
+) !default;

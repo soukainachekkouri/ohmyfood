@@ -4,15 +4,16 @@
   perspective: 700px;
   padding: 0;
   margin: 0;
-  height: 100px;
-  width: 100px;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
   position: fixed;
   z-index: 999;
-  animation: background 3s none;
+  animation: background 2.6s none;
+  visibility: hidden;
 }
 @keyframes background {
   0%{
@@ -26,8 +27,7 @@
 
 .loader > span{
   font-size: 400%;
-  
-  animation: flip 1s none;
+  animation: flip 4s none;
   font-family: $font-logo;
   color: $color-bg-dark;
   display: inline-block;
@@ -46,6 +46,48 @@
   }
 }
 
+/*Définition des couleurs*/ 
+.loader>span:nth-child(n+5){
+  color: $color-primary;
+}
+
+.loader>span:nth-child(-n+2){
+  color: $color-secondary;
+}
+
+/*Réglage délais d'apparition*/ 
+
+.loader>span:nth-child(1){
+  animation-delay: 0.1s;
+}
+
+.loader>span:nth-child(2){
+  animation-delay: 0.3s;
+}
+
+.loader>span:nth-child(3){
+  animation-delay: 0.5s;
+}
+
+.loader>span:nth-child(4){
+  animation-delay: 0.7s;
+}
+
+.loader>span:nth-child(5){
+  animation-delay: 0.9s;
+}
+
+.loader>span:nth-child(6){
+  animation-delay: 1.1s;
+}
+
+.loader>span:nth-child(7){
+  animation-delay: 1.3s;
+}
+
+.loader>span:nth-child(8){
+  animation-delay: 1.5s;
+}
 
 /* Apparition progressive des menus */ 
 
