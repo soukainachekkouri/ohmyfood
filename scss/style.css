@@ -35,21 +35,6 @@ h1 {
 }
 
 /*bouton menu*/
-.btn-menu {
-  position: relative;
-  width: 94%;
-  height: 80px;
-}
-
-.menu-choice-btn {
-  text-align: center;
-  padding: 40px 12px 20px 0;
-}
-
-.menu-choice-btn .menu-choice-btn-order {
-  width: 180px;
-}
-
 /*Localisation*/
 form {
   background-color: #EAEAEA;
@@ -722,8 +707,8 @@ header a {
           perspective: 700px;
   padding: 0;
   margin: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100px;
+  width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -736,8 +721,62 @@ header a {
   background-color: white;
   position: fixed;
   z-index: 999;
-  -webkit-animation: 3s both;
-          animation: 3s both;
+  -webkit-animation: background 3s none;
+          animation: background 3s none;
+}
+
+@-webkit-keyframes background {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes background {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+.loader > span {
+  font-size: 400%;
+  -webkit-animation: flip 1s none;
+          animation: flip 1s none;
+  font-family: "Shrikhand";
+  color: #EAEAEA;
+  display: inline-block;
+  -webkit-transform-origin: 0 70%;
+          transform-origin: 0 70%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  text-align: center;
+}
+
+@-webkit-keyframes flip {
+  35% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+  100% {
+    -webkit-transform: rotatex(360deg);
+            transform: rotatex(360deg);
+  }
+}
+
+@keyframes flip {
+  35% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+  100% {
+    -webkit-transform: rotatex(360deg);
+            transform: rotatex(360deg);
+  }
 }
 
 /* Apparition progressive des menus */
