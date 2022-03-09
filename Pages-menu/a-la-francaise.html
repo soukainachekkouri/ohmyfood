@@ -1,145 +1,161 @@
 <!DOCTYPE html>
-<html lang="fr"> 
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="../scss/normalize.css"/>
-      <link rel="stylesheet" href="../scss/style.css"/>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-      <script src="https://kit.fontawesome.com/a5bdff5a37.js" crossorigin="anonymous"></script>
-      <title>La palette du goût</title>
-    </head>
+<html lang="fr">
 
-    <body class="container">
-        <header class="logo">
-            <a href="../index.html">
-                <div class="icon-return">
-                    <i class="fas fa-arrow-left" aria-hidden="true"></i>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../scss/normalize.css" />
+    <link rel="stylesheet" href="../scss/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a5bdff5a37.js" crossorigin="anonymous"></script>
+    <title>À la française</title>
+</head>
+
+<body class="container">
+    <header class="logo">
+        <a href="../index.html">
+            <div class="icon-return">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+            </div>
+            <img src="../images/logo/ohmyfood.png">
+        </a>
+    </header>
+    <main>
+        <a href="#" class="cover">
+            <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="palette">
+        </a>
+        <section class="le-menu">
+            <div class="menu-title">
+                <h1>À la française</h1>
+                <div class="icon-like">
+                    <i class="empty-heart far fa-heart" aria-hidden="true"></i>
+                    <i class="full-heart fas fa-heart" aria-hidden="true"></i>
                 </div>
-                <img src="../images/logo/ohmyfood.png">
-            </a>
-        </header>
-        <main>
-            <a href="#" class="cover">
-                <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="palette">
-            </a>
-            <section class="le-menu">
-                <div class="menu-title">
-                    <h1>La palette du goût</h1>
-                    <div class="icon-like">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="les-entrees">
-                    <h2>Les entrées</h2>
+            </div>
+            <div class="la-carte">
+                <div id="starter" class="les-entrees">
+                    <h2>ENTRÉES</h2>
+                    <div class="border"></div>
                     <div class="card-dish">
-                        <div class="card-dish-detail">
-                            <span class="card-dish-meal"> Fricassée d'escargot</span>
-                            <span class="card-dish-accompagnement"> Au piment d'Espelette</span>
-                        </div>
+                        <p class="card-dish-meal"> Tartare de poulpe acidulé</p>
+                        <p class="card-dish-accompagnement"> Aux zestes d'orange</p>
                         <span class="card-price">25€</span>
-                        <span class="card-choose slidein">
-                            <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
-                        </span>
+                        <div class="card-choose">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
                     <div class="card-dish">
-                        <div class="card-dish-detail">
-                            <span class="card-dish-meal"> Foie gras de canard mi-cuit</span>
-                            <span class="card-dish-accompagnement"> Et ses copeaux de truffe noire</span>
+                        <p class="card-dish-meal"> Velouté de légumes d'antan</p>
+                        <p class="card-dish-accompagnement"> Carotte, panais, topinambour</p>
+                        <div class="card-price">35€</div>
+                        <div class="card-choose">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <span class="card-price">35€</span>
                     </div>
                     <div class="card-dish">
-                        <div class="card-dish-detail">
-                            <span class="card-dish-meal"> Oeuf au plat</span>
-                            <span class="card-dish-accompagnement"> Assaisonné à la truffe sur lit de caviar</span>
+                        <p class="card-dish-meal"> Soupe à l'oignon</p>
+                        <p class="card-dish-accompagnement"> Revisitée</p>
+                        <div class="card-price">20€</div>
+                        <div class="card-choose">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <span class="card-price">20€</span>
                     </div>
                 </div>
-                <div class="les-plats">
-                    <h2>Plats</h2>
+                <div id="second" class="les-plats">
+                    <h2>PLATS</h2>
+                    <div class="border"></div>
                     <div class="card-dish">
-                        <div class="card-dish-detail">
-                            <span class="card-dish-meal"> Filet de boeuf aux herbes</span>
-                            <span class="card-dish-accompagnement"> Accompagné de sa ribambelle de légumes</span>
+                        <p class="card-dish-meal"> Coquilles Saint-Jacques</p>
+                        <p class="card-dish-accompagnement"> Accompagnées d'une purée de panais</p>
+                        <div class="card-price">40€</div>
+                        <div class="card-choose">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <span class="card-price">40€</span>
                     </div>
                     <div class="card-dish">
-                        <div class="card-dish-detail">
-                            <span class="card-dish-meal"> Parmentier de queue de boeuf</span>
-                            <span class="card-dish-accompagnement"> À la truffe noire sur sa purée de panais</span>
+                        <p class="card-dish-meal"> Magret de canard</p>
+                        <p class="card-dish-accompagnement"> Et parmentier de pommes de terre</p>
+                        <div class="card-price">35€</div>
+                        <div class="card-choose">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <span class="card-price">35€</span>
                     </div>
                     <div class="card-dish">
-                        <div class="card-dish-detail">
-                            <span class="card-dish-meal"> Filet de turbot</span>
-                            <span class="card-dish-accompagnement"> Aux agrumes</span>
+                        <p class="card-dish-meal"> Pigeonneau d’Ille-et-Vilaine</p>
+                        <p class="card-dish-accompagnement"> Sur son lit de gnocchis aux légumes</p>
+                        <div class="card-price">44€</div>
+                        <div class="card-choose">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
                         </div>
-                        <span class="card-price">44€</span>
-                    </div>
-                </div>
-                <div class="les-desserts">
-                    <h2>Desserts</h2>
-                    <div class="card-dish">
-                        <div class="card-dish-detail">
-                            <span class="card-dish-meal"> Paris-Brest</span>
-                            <span class="card-dish-accompagnement"> Revisité</span>
-                        </div>
-                        <span class="card-price">18€</span>
-                    </div>
-                    <div class="card-dish">
-                        <div class="card-dish-detail">
-                            <span class="card-dish-meal"> Macaron au chocolat d'exception </span>
-                            <span class="card-dish-accompagnement"> Et glace à la vanille de Madagascar</span>
-                        </div>
-                        <span class="card-price">22€</span>
-                    </div>
-                    <div class="card-dish">
-                        <div class="card-dish-detail">
-                            <span class="card-dish-meal"> Mousse au chocolat </span>
-                            <span class="card-dish-accompagnement"> Au piment d'Espelette et à la truffe noire</span>
-                        </div>
-                        <span class="card-price">23€</span>
                     </div>
                 </div>
-            </section>
-            <footer class="footer">
-                <div class="footer-wrapper">
-                  <div class="logo-footer"> OhmyFood </div>
-                  <ul class="footer-list">
+                <div id="third" class="les-desserts">
+                    <h2>DESSERTS</h2>
+                    <div class="border"></div>
+                    <div class="card-dish">
+                        <p class="card-dish-meal"> Pétales de violettes glacés</p>
+                        <p class="card-dish-accompagnement"> Et purée de noisettes</p>
+                        <div class="card-price">18€</div>
+                        <div class="card-choose">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card-dish">
+                        <p class="card-dish-meal"> Fondant au chocolat</p>
+                        <p class="card-dish-accompagnement"> Revisité</p>
+                        <div class="card-price">22€</div>
+                        <div class="card-choose">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="card-dish">
+                        <p class="card-dish-meal"> Millefeuille croustillant </p>
+                        <p class="card-dish-accompagnement">Myrtilles et pâte d’amande</p>
+                        <div class="card-price">23€</div>
+                        <div class="card-choose">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-choice-btn">
+                <button class="menu-choice-btn-order" type="button">Commander</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <div class="logo-footer"> OhmyFood </div>
+                <ul class="footer-list">
                     <li>
-                      <a href="#" class="footer-link">
-                        <span class="footer-link-icon">
+                        <a href="#" class="footer-link">
+                            <span class="footer-link-icon">
                           <i class="fas fa-utensils" aria-hidden="true"></i>
                           Proposer un restaurant
                         </span>
-                      </a>
+                        </a>
                     </li>
                     <li>
-                      <a href="#" class="footer-link">
-                        <span class="footer-link-icon">
+                        <a href="#" class="footer-link">
+                            <span class="footer-link-icon">
                           <i class="fas fa-utensils" aria-hidden="true"></i>
                           Devenir partenaire
                         </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Mentions légales
                       </a>
                     </li>
                     <li>
-                      <a href="#" class="footer-link">Mentions légales
+                        <a href="#" class="footer-link">Contact
                       </a>
                     </li>
-                    <li>
-                      <a href="#" class="footer-link">Contact
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </footer>
-        </main>
-    </body>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

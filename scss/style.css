@@ -186,6 +186,16 @@ ol {
   margin-top: 20px;
 }
 
+.all_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,13 +207,15 @@ ol {
   background-color: #ffffff;
   margin-bottom: 20px;
   border-radius: 0.5rem;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
   margin-right: 10px;
+  width: 100%;
+  position: relative;
 }
 
 .cards a {
   display: block;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
 }
 
 .cards .new-tag {
@@ -212,6 +224,7 @@ ol {
   border-radius: 2%;
   padding: 0 0.6em;
   position: absolute;
+  left: 70%;
   /*right: 1.5rem; --> pq ca ne fonctionne pas sur la version web ?*/
   margin-top: 0.5rem;
 }
@@ -295,6 +308,10 @@ ol {
             flex-direction: column;
     gap: 1.35rem;
   }
+  .fonctionnement .card .new-tag {
+    right: 0;
+    /*right: 1.5rem; --> pq ca ne fonctionne pas sur la version web ?*/
+  }
   .fonctionnement .card i {
     padding-left: O;
     -ms-flex-item-align: center;
@@ -326,24 +343,32 @@ ol {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 0px 21px 0px 40px;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    padding: 0px 21px 0px 0px;
     margin-bottom: 30px;
     margin-top: 30px;
   }
   .restos .section-grid .cards {
-    width: 90%;
+    width: 25%;
+    margin-left: 2%;
   }
   .restos .section-grid .cards .cards-header {
-    margin-right: -21px;
+    margin-right: 12px;
   }
   .restos .section-grid .cards .cards-img {
-    width: 110.9%;
+    width: 100%;
     height: 183px;
   }
   .restos .section-grid .cards .cards-img img {
     height: 183px;
+    width: 100%;
+  }
+  .all_cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
   }
   .section-title {
     margin-left: 2.5rem;
@@ -659,6 +684,7 @@ header a {
 .footer-list {
   color: #ffffff;
   margin-right: 40px;
+  margin-left: -38px;
 }
 
 .footer-list li {
@@ -834,10 +860,14 @@ header a {
 @-webkit-keyframes delay {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
   }
-  /*ajouter d'autre intervalles*/
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -847,10 +877,14 @@ header a {
 @keyframes delay {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
   }
-  /*ajouter d'autre intervalles*/
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -858,25 +892,30 @@ header a {
   }
 }
 
-.starter {
-  -webkit-animation: delay 1s ease-in-out 0.6s 1 normal both;
-          animation: delay 1s ease-in-out 0.6s 1 normal both;
+#starter {
+  -webkit-animation: delay 1400ms;
+          animation: delay 1400ms;
 }
 
-.second {
-  -webkit-animation: delay 5s ease-in-out;
-          animation: delay 5s ease-in-out;
+#second {
+  -webkit-animation: delay 2000ms;
+          animation: delay 2000ms;
 }
 
-.third {
-  -webkit-animation: delay 8s ease-in-out;
-          animation: delay 8s ease-in-out;
+#third {
+  -webkit-animation: delay 2500ms;
+          animation: delay 2500ms;
 }
 
 /* Coeur menu*/
 .icon-like:hover .full-heart {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.icon-like:hover .full-heart:hover {
+  -webkit-transition: 3000ms ease-in-out;
+  transition: 3000ms ease-in-out;
 }
 
 .icon-like:hover .empty-heart {
