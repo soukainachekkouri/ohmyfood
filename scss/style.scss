@@ -8,44 +8,23 @@
 @import "./pages/pages";
 @import "./layouts/header";
 @import "./layouts/footer";
-@import "./utils/mixin";
 @import "./utils/animations";
 
+/*Mobile*/
 
 
+/*Général*/
 
-/*Mobile*/ 
+body {
+    margin: 0;
+}
 
-@media screen and (max-width:767px)
-{
-    
-    /*Général*/
-    
-    body 
-    {
-        margin: 0;
-    }
+input {
+    border: none;
+    background-color: transparent;
+}
 
-        form 
-        {
-            background-color: #EAEAEA;
-            display: flex;
-            justify-content: center;
-            margin-left: 30px;
-            align-items: center;
-            padding: 1rem;
-        }
-
-            input 
-            {
-                border: none;
-                background-color: transparent;
-            }
-
-    main 
-    {
-        background-color: #EAEAEA;
-        height: 50px;
-    }
-
+main {
+    background-color: #EAEAEA;
+    height: 50px;
 }

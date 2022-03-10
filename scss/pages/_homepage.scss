@@ -1,44 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 
-
 /*Localisation*/
 
-form 
-{
+form {
     background-color: #EAEAEA;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    margin-bottom: 0;
 }
 
-input 
-{
+input {
     border: none;
     background-color: transparent;
 }
 
-main 
-{
+main {
     background-color: #EAEAEA;
     height: 50px;
 }
 
-.icon_geo
-{
+.icon_geo {
     margin-right: 20px;
 }
 
+
 /* Part 1 */
 
-.intro
-{
+.intro {
     background-color: #f4f4f5;
 }
 
-.intro-wrapper
-{
+.intro-wrapper {
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -46,49 +41,49 @@ main
     justify-items: center;
 }
 
-.intro-title
-{
+.intro-title {
     font-size: 22px;
 }
+
 
 /*Comment ça marche */
 
 .fonctionnement {
     justify-content: space-between;
     align-items: baseline;
-    & .card{
+    & .card {
         display: flex;
         background-color: #f4f4f5;
         border-radius: 1.5rem;
         padding: 1.625rem var(--gap, 1.25rem) 1.625rem 0;
-        margin: 0 30px 20px 30px; 
+        margin: 0 30px 20px 30px;
         gap: 1.25rem;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        &:hover{
+        &:hover {
             transition: background-color .3s ease-in-out;
             background-color: #f2eafb;
         }
-        & i{
+        & i {
             padding-left: 0px;
             color: grey;
             align-self: center;
             margin-top: 10px;
             font-size: 20px;
-            &:hover{
+            &:hover {
                 transition: color .3s ease-in-out;
                 color: #9356dc;
             }
         }
-        & p{
+        & p {
             padding-left: 20px;
             color: black;
-            &:hover{
+            &:hover {
                 transition: color .3s ease-in-out;
                 color: #9356dc;
             }
         }
     }
-    & .card-number{
+    & .card-number {
         background-color: #9356dc;
         border-radius: 1.5rem;
         height: var(--label-height, 1.5rem);
@@ -97,7 +92,7 @@ main
         gap: 1.5rem;
         align-self: center;
     }
-    & .card-number-text{
+    & .card-number-text {
         color: #ffffff;
         align-content: center;
         margin-left: 7px;
@@ -105,39 +100,36 @@ main
     }
 }
 
-
-.section-title
-{
+.section-title {
     margin-left: 1rem;
 }
 
-ol
-{
+ol {
     padding-inline-start: 0;
 }
 
+
 /* Les restos*/
 
-.restos
-{
+.restos {
     background-color: #f4f4f5;
     padding-top: 10px;
     padding-bottom: 5px;
-    & .section-grid{
+    & .section-grid {
         padding: 20px;
-
     }
 }
 
-.section-title{
+.section-title {
     margin-top: 20px;
 }
 
-.all_cards{
+.all_cards {
     display: flex;
     flex-direction: column;
 }
-.cards{
+
+.cards {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
@@ -150,7 +142,7 @@ ol
         display: block;
         text-decoration: solid;
     }
-    & .new-tag{
+    & .new-tag {
         background-color: #99E2D0;
         color: #008766;
         border-radius: 2%;
@@ -161,7 +153,7 @@ ol
         margin-top: 0.5rem;
     }
     & .cards-img {
-        & img{
+        & img {
             width: 100%;
             height: 190px;
             border-top-left-radius: 0.5rem;
@@ -169,31 +161,27 @@ ol
             object-fit: cover;
         }
     }
-    & .cards-header 
-    {
+    & .cards-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-right: 20px;
-        & .cards-header-content
-        {
+        & .cards-header-content {
             margin-left: 20px;
             color: black;
             text-decoration: solid;
-            & .card-header-title
-            {
+            & .card-header-title {
                 margin-top: 0;
                 text-decoration: solid;
             }
-            
-            & .cards-header-para
-            {
+            & .cards-header-para {
                 margin-top: -12px;
                 text-decoration: solid;
             }
         }
     }
-} 
+}
+
 
 /*.icon_like
 {
@@ -211,29 +199,27 @@ ol
 */
 
 @media screen and (min-width:1024px) {
-
     /*Comment ça marche */
-
     .fonctionnement {
         margin: 40px 0px 40px 0px;
-        & .section-grid1{
+        & .section-grid1 {
             display: flex;
             justify-content: center;
         }
-        & .card{
+        & .card {
             width: 25%;
             display: flex;
             flex-direction: column;
             gap: 1.35rem;
-            & .new-tag{
+            & .new-tag {
                 right: 0;
                 /*right: 1.5rem; --> pq ca ne fonctionne pas sur la version web ?*/
             }
-            & i{
-                padding-left: O;
+            & i {
+                padding-left: Opx;
                 align-self: center;
             }
-            & .card-number{
+            & .card-number {
                 background-color: #9356dc;
                 border-radius: 1.5rem;
                 height: var(--label-height, 1.8rem);
@@ -241,54 +227,47 @@ ol
                 margin: -35px 0px 0px 0px;
                 align-self: center;
                 gap: 1.5rem;
-                & .card-number-text{
+                & .card-number-text {
                     margin-left: 9px;
                     line-height: 1.8rem;
                 }
             }
-            & .card-title{
+            & .card-title {
                 align-self: center;
             }
         }
     }
-
     /* Les restos*/
-
-    .restos
-    {
-        & .section-grid{
+    .restos {
+        & .section-grid {
             display: flex;
             /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
             padding: 0px 21px 0px 0px;
             margin-bottom: 30px;
             margin-top: 30px;
-            & .cards{
+            & .cards {
                 width: 25%;
                 margin-left: 2%;
-                & .le_resto{
-
-                }
-                & .cards-header{
+                & .le_resto {}
+                & .cards-header {
                     margin-right: 12px;
                 }
-                & .cards-img{
+                & .cards-img {
                     width: 100%;
                     height: 183px;
-                    & img{
+                    & img {
                         height: 183px;
                         width: 100%;
                     }
-                }   
+                }
             }
-        }    
+        }
     }
-
-    .all_cards{
+    .all_cards {
         flex-direction: row;
         width: 100%;
     }
-    
-    .section-title{
+    .section-title {
         margin-left: 2.5rem;
     }
 }

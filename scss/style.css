@@ -48,6 +48,7 @@ form {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
+  margin-bottom: 0;
 }
 
 input {
@@ -313,7 +314,7 @@ ol {
     /*right: 1.5rem; --> pq ca ne fonctionne pas sur la version web ?*/
   }
   .fonctionnement .card i {
-    padding-left: O;
+    padding-left: Opx;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -924,47 +925,19 @@ header a {
   color: transparent;
 }
 
-/* Apparition checkbox*/
-/*.card-choose{
-  &:hover .card-choose{
-    transform: translateX(0);
-  }
-  &:hover .card-choose i{
-    transform: rotate(0turn);
-  }
-  &:hover .card-price{
-    transform: translateX(-400%);
-  }
-  &:hover p{
-    width: calc(94%-70px);
-  }*/
 /*Mobile*/
-@media screen and (max-width: 767px) {
-  /*Général*/
-  body {
-    margin: 0;
-  }
-  form {
-    background-color: #EAEAEA;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 1rem;
-  }
-  input {
-    border: none;
-    background-color: transparent;
-  }
-  main {
-    background-color: #EAEAEA;
-    height: 50px;
-  }
+/*Général*/
+body {
+  margin: 0;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+}
+
+main {
+  background-color: #EAEAEA;
+  height: 50px;
 }
 /*# sourceMappingURL=style.css.map */
