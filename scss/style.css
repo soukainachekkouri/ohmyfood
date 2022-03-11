@@ -2,6 +2,20 @@
 /*Couleurs principales*/
 /* Couleurs de fonds et d'icônes */
 /* Couleurs de bouton */
+/*$breakpoints: (
+  "pluton": (
+    max-width: 345px,
+  ),
+  "terre": (
+    min-width: 600px,
+  ),
+  "jupiter": (
+    min-width: 900px,
+  ),
+  "soleil": (
+    min-width: 1200px,
+  ),
+) !default;*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
@@ -47,8 +61,7 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 input {
@@ -226,7 +239,6 @@ ol {
   padding: 0 0.6em;
   position: absolute;
   left: 70%;
-  /*right: 1.5rem; --> pq ca ne fonctionne pas sur la version web ?*/
   margin-top: 0.5rem;
 }
 
@@ -271,20 +283,6 @@ ol {
           text-decoration: solid;
 }
 
-/*.icon_like
-{
-    justify-items: center;
-    align-items: center;
-    justify-items: center;
-    margin-right: 40px;
-    font-size: 30px;
-    color: black;
-    &:active {
-        background-color: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%)                   ;
-        border: transparent;
-    }
-}
-*/
 @media screen and (min-width: 1024px) {
   /*Comment ça marche */
   .fonctionnement {
@@ -314,7 +312,7 @@ ol {
     /*right: 1.5rem; --> pq ca ne fonctionne pas sur la version web ?*/
   }
   .fonctionnement .card i {
-    padding-left: Opx;
+    padding-left: O;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -515,8 +513,8 @@ ol {
 }
 
 .card-dish:hover > .card-price {
-  -webkit-transform: translateX(-250%);
-          transform: translateX(-250%);
+  -webkit-transform: translateX(-270%);
+          transform: translateX(-270%);
 }
 
 .card-dish:hover > p {
@@ -772,7 +770,7 @@ header a {
 }
 
 .loader > span {
-  font-size: 400%;
+  font-size: 370%;
   -webkit-animation: flip 4s none;
           animation: flip 4s none;
   font-family: "Shrikhand";

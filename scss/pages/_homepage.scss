@@ -8,8 +8,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 input {
@@ -149,7 +148,6 @@ ol {
         padding: 0 0.6em;
         position: absolute;
         left: 70%;
-        /*right: 1.5rem; --> pq ca ne fonctionne pas sur la version web ?*/
         margin-top: 0.5rem;
     }
     & .cards-img {
@@ -182,22 +180,6 @@ ol {
     }
 }
 
-
-/*.icon_like
-{
-    justify-items: center;
-    align-items: center;
-    justify-items: center;
-    margin-right: 40px;
-    font-size: 30px;
-    color: black;
-    &:active {
-        background-color: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%)                   ;
-        border: transparent;
-    }
-}
-*/
-
 @media screen and (min-width:1024px) {
     /*Comment ça marche */
     .fonctionnement {
@@ -216,7 +198,7 @@ ol {
                 /*right: 1.5rem; --> pq ca ne fonctionne pas sur la version web ?*/
             }
             & i {
-                padding-left: Opx;
+                padding-left: O;
                 align-self: center;
             }
             & .card-number {
@@ -248,7 +230,6 @@ ol {
             & .cards {
                 width: 25%;
                 margin-left: 2%;
-                & .le_resto {}
                 & .cards-header {
                     margin-right: 12px;
                 }
