@@ -58,9 +58,8 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   margin-bottom: 10px;
 }
 
@@ -513,8 +512,8 @@ ol {
 }
 
 .card-dish:hover > .card-price {
-  -webkit-transform: translateX(-270%);
-          transform: translateX(-270%);
+  -webkit-transform: translateX(-250%);
+          transform: translateX(-250%);
 }
 
 .card-dish:hover > p {
