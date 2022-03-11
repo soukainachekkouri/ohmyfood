@@ -645,7 +645,7 @@ ol {
   }
   .card-dish {
     padding: 0px 15px 0px 15px;
-    width: 370px;
+    width: 100%;
   }
 }
 
