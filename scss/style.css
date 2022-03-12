@@ -37,6 +37,14 @@ h1 {
   width: auto;
   color: #ffffff;
   border-color: transparent;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
+.button:hover {
+  -webkit-box-shadow: 5px 5px 10px #8f8d8d;
+          box-shadow: 5px 5px 10px #8f8d8d;
+  opacity: 0.8;
 }
 
 .menu-choice-btn-order {
@@ -46,6 +54,14 @@ h1 {
   width: 40%;
   color: #ffffff;
   border-color: transparent;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
+.menu-choice-btn-order:hover {
+  -webkit-box-shadow: 5px 5px 10px #8f8d8d;
+          box-shadow: 5px 5px 10px #8f8d8d;
+  opacity: 0.8;
 }
 
 /*bouton menu*/

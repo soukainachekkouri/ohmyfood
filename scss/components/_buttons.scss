@@ -1,24 +1,30 @@
-.button
-{
+.button {
     height: 3rem;
     border-radius: 2rem;
     background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
     width: auto;
     color: #ffffff;
     border-color: transparent;
+    transition: opacity 250ms;
+    &:hover {
+        box-shadow: 5px 5px 10px #8f8d8d;
+        opacity: 0.8;
+    }
 }
 
-.menu-choice-btn-order
-{
+.menu-choice-btn-order {
     height: 3rem;
     border-radius: 2rem;
     background: linear-gradient(175deg, #FF79DA 0%, #9356DC 100%);
     width: 40%;
     color: #ffffff;
     border-color: transparent;
+    transition: opacity 250ms;
+    &:hover {
+        box-shadow: 5px 5px 10px #8f8d8d;
+        opacity: 0.8;
+    }
 }
 
+
 /*bouton menu*/
-
-
-
